@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <block name="title"><title>{$meta_title}｜{:C('WEB_SITE_TITLE')}－{:C('WEB_SITE_SLOGAN')}</title></block>
+    <title>啄木鸟无人机 | PloverUAV - 致力于无人机相关技术研发，设计和推广无人机应用服务</title>
+    <meta name="keywords" content="啄木鸟无人机，专业无人机">
+    <meta name="description" content="从技术研发，生产制造，工程服务到售后维护，打造一条自上而下，具备核心知识产权的产业链通路，以安全，可靠，效率的无人机技术为基础，同农业，工业，国土安全等多领域深度融合，打造出有啄木鸟特色的行业应用。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta name="author" content="{:C('WEB_SITE_TITLE')}">
@@ -45,6 +48,68 @@
                     <block name="main-nav">
                         <nav class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
                             <div class="container">
+                                <div class="navbar-header">
+                                    <a class="img-responsive pull-left" href="{:C('HOME_PAGE')}">
+                                        <img alt="hujun" src="__HOME_IMG__/index/logo_index.png">
+                                    </a>
+                                </div>
+                                <div class="collapse navbar-collapse navbar-collapse-main">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li><a href="{:C('HOME_PAGE')}">首页</a></li>
+                                        <cms:category_list name="vo" pid="0" group="1">
+                                            <php>if($vo['_child']):</php>
+                                            <li class="dropdown">
+                                                <a href="{$vo.href}" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                                    {$vo.title} <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <volist name="vo._child" id="vo1">
+                                                        <li>
+                                                            <a href="{$vo1.href}">{$vo1.title}</a>
+                                                        </li>
+                                                    </volist>
+                                                </ul>
+                                            </li>
+                                            <php>else:</php>
+                                            <li>
+                                                <a href="{$vo.href}">
+                                                    <span> {$vo.title}</span>
+                                                </a>
+                                            </li>
+                                            <php>endif;</php>
+                                        </cms:category_list>
+                                    </ul>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <present name="_user_auth">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <img class="nav-img img-circle" src="{$_user_auth.avatar|get_cover='avatar'}" alt="{$_user_auth.nickname}">
+                                                    <span">
+                                                    {$_user_auth.nickname}
+                                                    <span class="badge badge-danger">{$_new_message}</span> <!-- 新消息数量 -->
+                                                    </span>
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="{:U('User/Index/home', array('uid' => $_user_auth['uid']), true, true)}"><i class="fa fa-home"></i> 个人主页</a></li>
+                                                    <volist name="_user_nav_main" id="vo_nav">
+                                                        <li><a href="{:U($vo_nav['url'], null, true, true)}" class="{$vo_nav.class}"><i class="{$vo_nav.icon}"></i> {$vo_nav.title}</a></li>
+                                                    </volist>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="{:U('User/User/logout', null, true, true)}" class="ajax-get"><i class="fa fa-sign-out"></i> 注销登录</a></li>
+                                                </ul>
+                                            </li>
+                                            <else />
+                                            <div class="navbar-right">
+                                                <a class="btn btn-success navbar-btn" data-toggle="modal" href="#register-modal">注册</a>
+                                                <a class="btn btn-primary navbar-btn" data-toggle="modal" href="#login-modal">登录</a>
+                                            </div>
+                                        </present>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container">
                                 <img src="__HOME_IMG__/index/logo_index.png" class="img-responsive pull-left">
                                 <nav style="height: 1px;" aria-expanded="false" id="bs-navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
@@ -52,7 +117,6 @@
                                         <li><a href="home/about.html">关于我们</a></li>
                                         <li><a href="news.html">公司新闻</a></li>
                                         <li><a href="video.html">精彩视频</a></li>
-                                        <li><a href="uav-news.html">UAV新闻</a></li>
                                         <li><a href="contact.html">留言联系</a></li>
                                         <li><a href="en/index.html">ENGLISH</a></li>
                                         <li><a href="kr/index.html">한국어</a></li>
@@ -125,7 +189,48 @@
                     </div>
                 </div>
             </div>
-
+            <block name="footer">
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-6">
+                                <h4>
+                                    <php>if(C('WEB_SITE_LOGO')):</php>
+                                    <img alt="logo" style="width:220px;" src="{$Think.config.WEB_SITE_LOGO|get_cover}">
+                                    <php>else:</php>
+                                    <h3><a href="{:C('WEBSITE_DOMAIN')}">{:C('PRODUCT_LOGO')}</a></h3>
+                                    <php>endif;</php>
+                                </h4>
+                                <p class="text-muted">{:C('WEB_SITE_DESCRIPTION')}</p>
+                            </div>
+                            <div class="col-sm-6  col-lg-5 col-lg-offset-1">
+                                <div class="row">
+                                    <!-- 底部导航 开始 -->
+                                    <cms:footnav_list name="vo">
+                                        <div class="col-xs-4 footnav-list">
+                                            <h4><a>{$vo.title}</a></h4>
+                                            <ul class="list-unstyled">
+                                                <volist name="vo._child" id="vo1">
+                                                    <li>
+                                                        <a target="_blank" class="text-muted" href="{$vo1.url}">{$vo1.title}</a>
+                                                    </li>
+                                                </volist>
+                                            </ul>
+                                        </div>
+                                    </cms:footnav_list>
+                                    <!-- 底部导航 结束 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer-bottom">
+                            <ul class="list-inline text-center">
+                                <li><span class="copyright">{:C('WEB_SITE_COPYRIGHT')}</span></li>
+                                <li><a class="icp" href="http://www.miibeian.gov.cn/" target="_blank">{:C('WEB_SITE_ICP')}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </block>
         </div>
     </block>
 
