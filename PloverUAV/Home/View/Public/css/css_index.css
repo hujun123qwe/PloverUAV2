@@ -1,0 +1,79 @@
+*{
+    margin:0px auto;
+    padding:0px;
+    font-family: "Microsoft YaHei UI","微软雅黑";
+}
+.navbar{
+    width: 98%;
+    height: 60px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
+}
+.navbar .navbar-right{
+    padding-top: 5px;
+}
+#header, #body, .container-fluid{
+    width: 98%;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+}
+
+#header, #header .logo, #header .menu{
+    height: 60px;
+    /*border: dashed 1px saddlebrown;*/
+}
+#header .logo{
+    width: 405px;
+    text-align: center;
+    background-image: url("../img/logo_index.png");
+}
+#header .menu{
+    float: right;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 60px;
+    text-align: center;
+}
+#header .menu img{
+    opacity: 0.5;
+}
+#header .menu:hover img{
+    opacity: 1;
+}
+#header .menu .gn-menu{
+    list-style:none;
+}
+#header .menu .gn-menu{
+    position:absolute;
+    display:none;
+}
+#header .menu:hover .gn-menu{
+    display: block;
+}
+/*footer*/
+.container-fluid{
+    background-color: #2c3e50;
+    color: rgba(255,255,255,0.5);
+}
+
+.row a{
+    color: #a6acaa;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 21px;
+    text-decoration: none;
+}
+.row a:hover{
+    color: white;
+}
+.container-fluid img{
+    margin-top: 5px;
+    margin-right: 1px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .col-sm-12 .container{
+        text-align: center;
+    }
+}
