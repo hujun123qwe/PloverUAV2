@@ -38,7 +38,7 @@ define('MODULE_MARK', 'Home');
  * 应用目录设置
  * 安全期间，建议安装调试完成后移动到非WEB目录
  */
-define('APP_PATH', './PloverUAV/');
+define('APP_PATH', './Application/');
 
 /**
  * 缓存目录设置
