@@ -28,59 +28,28 @@
 </head>
 
 <body>
-    <div class="clearfix hook hook-page-header">
-        {:hook('PageHeader')} <!-- 文档开始钩子 -->
-    </div>
-
     <block name="wrap">
         <div class="clearfix full-wrap">
-            <div class="clearfix full-header">
-                    <block name="main-nav">
-                        <nav class="navbar navbar-default main-nav" role="navigation">
-                            <div class="container">
-                                <div class="navbar-header">
-                                    <a class="navbar-brand" href="{:C('HOME_PAGE')}">
-                                        <img alt="logo" src="{$Think.config.WEB_SITE_LOGO|get_cover}" style="height:60px;">
-                                    </a>
-                                </div>
-                                <div class="collapse navbar-collapse navbar-collapse-main">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="{:C('HOME_PAGE')}">首&nbsp;&nbsp;页</a></li>
-                                        <cms:category_list name="vo" pid="0" group="1">
-                                            <php>if($vo['_child']):</php>
-                                                <li class="dropdown">
-                                                    <a href="{$vo.href}" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                                                        {$vo.title} <span class="caret"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <volist name="vo._child" id="vo1">
-                                                            <li>
-                                                                <a href="{$vo1.href}">{$vo1.title}</a>
-                                                            </li>
-                                                        </volist>
-                                                    </ul>
-                                                </li>
-                                            <php>else:</php>
-                                                <li>
-                                                    <a href="{$vo.href}">
-                                                        <span> {$vo.title}</span>
-                                                    </a>
-                                                </li>
-                                            <php>endif;</php>
-                                        </cms:category_list>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </nav>
-                    </block>
-                </block>
-            </div>
-
+	        <div class="container some">
+	             <div class="nav navbar navbar-right" style="margin-top:10px;margin-bottom:10px;">
+                     <li class="dropdown">
+                         <a href="{$vo.href}" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            LANGUAGE <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu">
+                         	<li><a href="{$vo1.href}">简体中文</a></li>
+                            <li><a href="{$vo1.href}">ENGLISH</a></li>
+                            <li><a href="{$vo1.href}">한국어</a></li>
+                         </ul>
+                     </li>
+	        	</div>
+	    	</div>           
             <div class="clearfix full-container">
                 <block name="jumbotron">
-                    <div class="jumbotron jumbotron-primary jumbotron-background main-jumbotron text-center">
-                        <h4>简单、高效、卓越 － <span class="small">互联网WEB产品最佳选择</span></h4>
+                    <div class="jumbotron jumbotron-primary jumbotron-background main-jumbotron">
+                    <div class="container">
+        				<h1>了解啄木鸟</h1>
+        			</div>
                     </div>
                 </block>
 
@@ -97,6 +66,7 @@
                                 <div class="col-sm-6 col-lg-6">
                                     <h4>
                                       <php>if(C('WEB_SITE_LOGO')):</php>
+                                        
                                             <img alt="logo" style="width:220px;" src="{$Think.config.WEB_SITE_LOGO|get_cover}">
                                         <php>else:</php>
                                             <h3><a href="{:C('WEBSITE_DOMAIN')}">{:C('PRODUCT_LOGO')}</a></h3>
@@ -111,6 +81,7 @@
                                             <div class="col-xs-4 footnav-list">
                                                 <h4><a>{$vo.title}</a></h4>
                                                 <ul class="list-unstyled">
+                                          
                                                      <volist name="vo._child" id="vo1">
                                                         <li>
                                                             <a target="_blank" class="text-muted" href="{$vo1.url}">{$vo1.title}</a>

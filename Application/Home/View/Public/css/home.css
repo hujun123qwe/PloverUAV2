@@ -18,6 +18,12 @@
 }
 
 /* 主导航 */
+
+.some{
+    background-image: url(../img/index/logo_index.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .main-nav {
     margin-bottom: 0;
     border-radius: 0;
