@@ -24,6 +24,16 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.bgk_img_1{
+    background-image: url(../img/index/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bgk_img_2{
+    background-image: url(../img/index/uav3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .main-nav {
     margin-bottom: 0;
     border-radius: 0;
