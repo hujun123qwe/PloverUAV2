@@ -29,11 +29,10 @@
 </head>
 
 <body>
-    语言：{$Think.lang.About}
     <block name="wrap">
         <div class="clearfix full-wrap">
 	        <div class="container some">
-                <a href="http://www.ploveruav.com" style="margin-left:240px;width:405px;height:60px;display:block;float:left;"></a>
+                <a href="{$Think.config.HOME_PAGE}" style="margin-left:240px;width:405px;height:60px;display:block;float:left;"></a>
 	             <div class="nav navbar navbar-right" style="margin-top:10px;margin-bottom:10px;">
                      <li class="dropdown">
                          <a href="{$vo.href}" class="dropdown-toggle" data-toggle="dropdown" role="button">
@@ -50,15 +49,12 @@
             <div class="clearfix full-container">
                 <block name="jumbotron">
                 </block>
-
                 <div id="main" class="main">
                     <block name="main">这里是内容</block>
                 </div>
             </div>
         <block name="picture_viewer">
-
         </block>
-
             <div class="clearfix full-foooter">
                 <block name="footer">
                     <div class="footer">
@@ -66,7 +62,7 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-6">
                                     <h4>
-                                        <a href="http://www.ploveruav.com"><img alt="logo" style="width:220px;" src="__HOME_IMG__/index/logo_Snapseed.jpg"></a>
+                                        <a href="{$Think.config.HOME_PAGE}"><img alt="logo" style="width:220px;" src="__HOME_IMG__/index/logo_Snapseed.jpg"></a>
                                     </h4>
                                     <p class="text-muted">{:C('WEB_SITE_DESCRIPTION')}</p>
                                 </div>
@@ -97,8 +93,6 @@
                                             <li style="margin-top: 5px; font-size: 12px;"><a class="text-muted" href="index.php?s=/cms/index/lists/cid/2.html"></a></li>
                                         </ul>
                                     </div>
-
-
                                         <!-- 底部导航 结束 -->
                                     </div>
                                 </div>

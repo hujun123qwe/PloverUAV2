@@ -16,20 +16,13 @@ $_config = array(
      * 根据OpenCMF用户协议：
      * 任何情况下使用OpenCMF均需获取官方授权（除了开源版本即CoreThink），违者追究法律责任，授权联系：admin@opencmf.cn
      */
-    'PRODUCT_NAME'    => 'OpenCMF',                      // 产品名称
-    'PRODUCT_LOGO'    => '<b><span class="open" style="color: #a5aeb4;">Core</span><span class="cmf" style="color: #3fa9f5;">Think</span></b>',  // 产品Logo
-    'CURRENT_VERSION' => '1.2.0',                        // 当前版本号
-    'DEVELOP_VERSION' => 'release',                      // 开发版本号
-    'BUILD_VERSION'   => '201601222050',                 // 编译标记
-    'PRODUCT_MODEL'   => 'corethink',                    // 产品型号
-    'PRODUCT_TITLE'   => '开源版',                        // 产品标题
+    'PRODUCT_NAME'    => 'PloverUAV',                      // 产品名称
     'WEBSITE_DOMAIN'  => 'http://www.ploveruav.com',      // 官方网址
-    'UPDATE_URL'      => '',   // 官方更新网址
     'COMPANY_NAME'    => '安徽啄木鸟无人机科技有限公司',     // 公司名称
     'DEVELOP_TEAM'    => '安徽啄木鸟无人机科技有限公司',     // 当前项目开发团队名称
 
     // 产品简介
-    'PRODUCT_INFO'    => '从技术研发，生产制造，工程服务到售后维护，打造一条自上而下，具备核心知识产权的产业链通路，以安全，可靠，效率的无人机技术为基础，同农业，工业，国土安全等多领域深度融合，打造出有啄木鸟特色的行业应用。',
+    'PRODUCT_INFO'    => '  从技术研发，生产制造，工程服务到售后维护，打造一条自上而下，具备核心知识产权的产业链通路，以安全，可靠，效率的无人机技术为基础，同农业，工业，国土安全等多领域深度融合，打造出有啄木鸟特色的行业应用。',
 
     // 公司简介
     'COMPANY_INFO'    => '安徽啄木鸟无人机科技有限公司（Anhui PloverUAV Technology Co.Ltd）致力于无人机相关技术研发，设计和推广无人机应用服务。公司坐落于安徽省马鞍山软件园，是一家高新技术企业，以无人机技术为支撑，积极向多领域拓展的科技性公司。',

@@ -37,7 +37,11 @@
 <block name="jumbotron">
     <div class="jumbotron jumbotron-background main-jumbotron">
         <div class="container">
-            <h1><span style="overflow: hidden">{$info.main_field}</span></h1>
+            <span style="color:rgb(68,168,242);font-size: 38px;">{$_current_category.title}</span>
+            <ol class="breadcrumb" style="background-color: #EEEEEE;">
+                <li><a href="{$Think.config.HOME_PAGE}">首页</a></li>
+                <li>{$_current_category.title}</li>
+            </ol>
         </div>
     </div>
 </block>
@@ -106,7 +110,7 @@
                 <div class="panel">
                     <div class="panel-body">
                         <!-- 搜索 -->
-                        <form role="search" action="{:U('lists', array('cid' => $_current_category['id']))}">
+                        <form role="search" action="">
                             <div class="form-group">
                                 <div class="input-group">
                                     <input type="text" class="form-control search-input" placeholder="搜索" name="keyword" value="{$_GET['keywords']}">
@@ -117,11 +121,14 @@
 
                         <!-- 分类列表 -->
                         <div class="list-group">
-                            <cms:category_list name="vo" pid="$_current_category['id']">
-                                <a class="list-group-item <if condition='$vo.id eq $_current_category.id'>active</if>" href="{:U('lists', array('cid' => $vo['id']))}">
-                                    {$vo.title}
-                                </a>
-                            </cms:category_list>
+                            <a class="list-group-item <?php echo ($_current_category['id']==1) ?  'active' :  ' '; php?>" href="index.php?s=/cms/cate/1.html">关于我们</a>
+                            <a class="list-group-item <?php echo ($_current_category['id']==3) ?  'active' :  ' '; php?>" href="index.php?s=/cms/cate/3.html">发展历程</a>
+                            <a class="list-group-item <?php echo ($_current_category['id']==2) ?  'active' :  ' '; php?>" href="index.php?s=/cms/cate/2.html">联系我们</a>
+                            <a class="list-group-item <?php echo ($_current_category['id']==4) ?  'active' :  ' '; php?>" href="index.php?s=/cms/index/lists/cid/4.html">新闻动态</a>
+                            <a class="list-group-item <?php echo ($_current_category['id']==5) ?  'active' :  ' '; php?>" href="index.php?s=/cms/index/lists/cid/5.html">精彩视频</a>
+                            <a class="list-group-item <?php echo ($_current_category['id']==6) ?  'active' :  ' '; php?>" href="index.php?s=/cms/index/lists/cid/6.html">图片墙</a>
+                            <a class="list-group-item <?php echo ($_current_category['id']==7) ?  'active' :  ' '; php?>" href="index.php?s=/cms/cate/7.html">航测业务</a>
+                            <a class="list-group-item <?php echo ($_current_category['id']==8) ?  'active' :  ' '; php?>" href="index.php?s=/cms/cate/8.html">植保业务</a>
                         </div>
                     </div>
                 </div>

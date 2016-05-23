@@ -44,7 +44,11 @@
 <block name="jumbotron">
     <div class="jumbotron jumbotron-background main-jumbotron">
         <div class="container">
-            <h1>{$_current_category.title}</h1>
+            <span style="color:rgb(68,168,242);font-size: 38px;">{$_current_category.title}</span>
+            <ol class="breadcrumb" style="background-color: #EEEEEE;">
+                <li><a href="{$Think.config.HOME_PAGE}">首页</a></li>
+                <li>{$_current_category.title}</li>
+            </ol>
         </div>
     </div>
 </block>
@@ -90,7 +94,7 @@
                 <div class="panel">
                     <div class="panel-body">
                         <!-- 搜索 -->
-                        <form role="search" action="{:U('', array('cid' => $_current_category['id']))}">
+                        <form role="search" action="">
                             <div class="form-group">
                                 <div class="input-group">
                                     <input type="text" class="form-control search-input" placeholder="搜索" name="keyword" value="{$_GET['keywords']}">
