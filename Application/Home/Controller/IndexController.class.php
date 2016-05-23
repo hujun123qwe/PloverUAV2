@@ -26,7 +26,9 @@ class IndexController extends HomeController {
                 $this->redirect(C('INDEX_URL'));
             }
         }
-        $this->assign('meta_title', "首页");
+        $this->assign('meta_title', L('home_page'));
         $this->display();
     }
+
+
 }
