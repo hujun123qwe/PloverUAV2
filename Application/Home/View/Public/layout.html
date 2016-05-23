@@ -31,6 +31,7 @@
 <body>
     <block name="wrap">
         <div class="clearfix full-wrap">
+            <div style="height:70px; width:100%;box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);margin-bottom: 8px;">
 	        <div class="container some">
                 <a href="{$Think.config.HOME_PAGE}" style="margin-left:240px;width:405px;height:60px;display:block;float:left;"></a>
 	             <div class="nav navbar navbar-right" style="margin-top:10px;margin-bottom:10px;">
@@ -39,13 +40,15 @@
                             LANGUAGE <span class="caret"></span>
                          </a>
                          <ul class="dropdown-menu">
-                         	<li><a href="{$vo1.href}">简体中文</a></li>
-                            <li><a href="{$vo1.href}">ENGLISH</a></li>
-                            <li><a href="{$vo1.href}">한국어</a></li>
+                         	<li><a href="{$Think.config.HOME_PAGE}">简体中文</a></li>
+                            <li><a href="{$Think.config.HOME_PAGE}">ENGLISH</a></li>
+                            <li><a href="{$Think.config.HOME_PAGE}">한국어</a></li>
                          </ul>
                      </li>
 	        	</div>
-	    	</div>           
+	    	</div>
+            </div>
+
             <div class="clearfix full-container">
                 <block name="jumbotron">
                 </block>
@@ -53,6 +56,9 @@
                     <block name="main">这里是内容</block>
                 </div>
             </div>
+
+
+
         <block name="picture_viewer">
         </block>
             <div class="clearfix full-foooter">
