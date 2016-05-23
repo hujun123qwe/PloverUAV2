@@ -48,6 +48,12 @@ $_config = array(
 
     // URL配置
     'URL_CASE_INSENSITIVE' => true,  // 不区分大小写
+    'URL_ROUTER_ON'          => true, // 是否开启URL路由
+    'URL_ROUTE_RULES'        => array(
+        'admin' =>  'Admin/Index/Index',
+    ), // 默认路由规则 针对模块
+    'URL_MAP_RULES'          => array(), // URL映射定义规则
+
 
     // 应用配置
     'DEFAULT_MODULE'     => 'Home',

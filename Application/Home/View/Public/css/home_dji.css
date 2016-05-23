@@ -1,0 +1,491 @@
+.dji-en  .banner .swiper-slide .title,.dji-zh-CN  .banner .swiper-slide .title,.dji-de  .banner .swiper-slide .title,.dji-zh-TW  .banner .swiper-slide .title,.dji-fr  .banner .swiper-slide .title,.dji-es  .banner .swiper-slide .title,.dji-en  .banner .swiper-slide .assist,.dji-zh-CN  .banner .swiper-slide .assist,.dji-de  .banner .swiper-slide .assist,.dji-zh-TW  .banner .swiper-slide .assist,.dji-fr  .banner .swiper-slide .assist,.dji-es  .banner .swiper-slide .assist,.dji-en  .grid-item .title,.dji-zh-CN  .grid-item .title,.dji-de  .grid-item .title,.dji-zh-TW  .grid-item .title,.dji-fr  .grid-item .title,.dji-es  .grid-item .title,.dji-en  .grid-item .main,.dji-zh-CN  .grid-item .main,.dji-de  .grid-item .main,.dji-zh-TW  .grid-item .main,.dji-fr  .grid-item .main,.dji-es  .grid-item .main,.dji-en  .grid-item .main-small,.dji-zh-CN  .grid-item .main-small,.dji-de  .grid-item .main-small,.dji-zh-TW  .grid-item .main-small,.dji-fr  .grid-item .main-small,.dji-es  .grid-item .main-small{font-family:"Gotham","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif}
+.ratio-2-1{padding:0}
+.ratio-2-1>:first-child{position:absolute;width:100%;height:100%;top:0;left:0}
+.ratio-2-1:after{content:' ';display:block;padding-top:50%}
+.ratio-1-1{padding:0}
+.ratio-1-1>:first-child{position:absolute;width:100%;height:100%;top:0;left:0}
+.ratio-1-1:after{content:' ';display:block;padding-top:100%}
+.ratio-1-2{padding:0}
+.ratio-1-2>:first-child{position:absolute;width:100%;height:100%;top:0;left:0}
+.ratio-1-2:after{content:' ';display:block;padding-top:200%}
+{min-width:1230px;background:0 0}
+ .link-more{position:relative;font-weight:400;font-size:12px;line-height:15px;padding-bottom:10px;color:#fff;cursor:pointer}
+ .link-more:after, .link-more:before{content:" ";position:absolute;left:0;right:0;bottom:0;height:2px;background:#44a8f2}
+ .link-more:after{left:50%;right:50%;background:#fff;-webkit-transition:all 300ms;-moz-transition:all 300ms;-ms-transition:all 300ms;-o-transition:all 300ms;transition:all 300ms}
+ .link-more:hover:after{left:0;right:0}
+ .link-more.link-more-grey{color:#707473}
+ .link-more.link-more-grey:before{background:#44a8f2}
+ .link-more.link-more-grey:after{background:#707473}
+ .banner{position:relative;border-bottom:1px solid transparent;margin-bottom:-2px}
+ .banner .sbanner{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;z-index:10}
+ .banner .sbanner.active .bg{-webkit-transform:scale(1.02);-moz-transform:scale(1.02);-ms-transform:scale(1.02);-o-transform:scale(1.02);transform:scale(1.02)}
+ .banner .sbanner .bg{position:absolute;left:0;top:0;width:100%;height:100%;background-repeat:no-repeat;background-size:cover;background-color:transparent;-webkit-transition:transform 6s;-moz-transition:transform 6s;-ms-transition:transform 6s;-o-transition:transform 6s;transition:transform 6s}
+ .banner .sbanner .title{display:none;position:absolute;right:4%;bottom:50px;font-weight:300;font-size:35px;color:#707473}
+ .banner .sbanner .title.caption-white{color:#fff}
+ .banner .sbanner .logo{position:absolute;left:4%;bottom:50px}
+ .banner .swiper-container-banner .swiper-button-prev, .banner .swiper-container-banner .swiper-button-next, .banner .swiper-container-banner .swiper-pagination{opacity:.2;-webkit-transition:opacity 100ms;-moz-transition:opacity 100ms;-ms-transition:opacity 100ms;-o-transition:opacity 100ms;transition:opacity 100ms}
+ .banner .swiper-container-banner.mousemoving .swiper-button-prev, .banner .swiper-container-banner.mousemoving .swiper-button-next, .banner .swiper-container-banner.mousemoving .swiper-pagination{opacity:1}
+ .banner .swiper-slide{height:678px;background-position:center;background-color:#000;background-repeat:no-repeat;background-size:cover}
+ .banner .swiper-slide .container{width:100%;max-width:1170px}
+ .banner .swiper-slide .product-name .icon{display:inline-block}
+ .banner .swiper-slide .title{font-weight:300;font-size:38px;color:#f7f8f9;line-height:45px;margin-top:66px;text-transform:uppercase}
+ .banner .swiper-slide .assist{font-weight:300;font-size:22px;color:#f7f8f9;line-height:32px;position:relative}
+ .banner .swiper-slide .assist .newYearBanner{position:absolute;left:0;top:40px;font-size:12px}
+ .banner .swiper-slide .footer{margin-top:66px}
+ .banner .swiper-slide .footer a{display:inline-block;margin-bottom:20px}
+ .banner .swiper-slide .link-more{font-size:12px;line-height:18px}
+ .banner .swiper-slide .btn-video{margin-left:26px}
+ .banner .swiper-slide .btn-video .fa-play{margin-left:8px}
+ .banner .swiper-slide .btn-buy-primary{display:inline-block;background:#44a8f2;font-weight:400;font-size:12px;color:#fff;height:39px;line-height:17px;padding:9px 10px;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;margin-left:30px;-webkit-transition:all 300ms;-moz-transition:all 300ms;-ms-transition:all 300ms;-o-transition:all 300ms;transition:all 300ms;border:2px solid #44a8f2;cursor:pointer}
+ .banner .swiper-slide .btn-buy-primary:hover{border:2px solid #44a8f2;background-color:transparent;color:#44a8f2}
+ .banner .slide-2col .container{height:100%;position:relative;background-repeat:no-repeat}
+ .banner .slide-2col .product-name{position:absolute;text-align:center}
+ .banner .slide-2col .title{margin-top:0}
+ .banner .swiper-slide-active .title, .banner .swiper-slide-active .assist, .banner .swiper-slide-active .footer{-webkit-animation:down-in 500ms;-moz-animation:down-in 500ms;-ms-animation:down-in 500ms;-o-animation:down-in 500ms;animation:down-in 500ms;animation-fill-mode:both}
+ .banner .swiper-slide-active .title{animation-delay:500ms}
+ .banner .swiper-slide-active .assist{animation-delay:600ms}
+ .banner .swiper-slide-active .footer{animation-delay:800ms}
+ .banner .swiper-button-prev, .banner .swiper-button-next{background:0 0;padding:5px;-webkit-transition:all 200ms;-moz-transition:all 200ms;-ms-transition:all 200ms;-o-transition:all 200ms;transition:all 200ms;opacity:.6}
+ .banner .swiper-button-prev:hover, .banner .swiper-button-next:hover{opacity:1}
+ .banner .swiper-button-prev .icon-swiper-arrow-left-white, .banner .swiper-button-next .icon-swiper-arrow-left-white, .banner .swiper-button-prev .icon-swiper-arrow-right-white, .banner .swiper-button-next .icon-swiper-arrow-right-white{display:none}
+ .banner .swiper-container-banner.white-nav .icon-swiper-arrow-left-white, .banner .swiper-container-banner.white-nav .icon-swiper-arrow-right-white{display:block}
+ .banner .swiper-container-banner.white-nav .icon-swiper-arrow-left, .banner .swiper-container-banner.white-nav .icon-swiper-arrow-right{display:none}
+ .banner .swiper-container-banner.white-nav .swiper-pagination-bullet:after{background-color:#fff}
+ .banner .swiper-pagination-bullet{padding:10px 0;width:60px;background:0 0;opacity:1}
+ .banner .swiper-pagination-bullet, .banner .swiper-pagination-bullet:after{-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0}
+ .banner .swiper-pagination-bullet:after{content:'';width:100%;background:#000 0 0;display:inline-block;height:2px;opacity:.2;-webkit-transition:all 200ms;-moz-transition:all 200ms;-ms-transition:all 200ms;-o-transition:all 200ms;transition:all 200ms}
+ .banner .swiper-pagination-bullet-active:after{opacity:.5}
+ .banner .swiper-pagination-bullet-active.swiper-slide-active .countdown-container{-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);opacity:1}
+ .banner .swiper-pagination-bullet-active.swiper-slide-active .drone-fg{-webkit-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;-moz-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;-ms-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;-o-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;animation:drone-fg-anime 2s ease-in-out 1 forwards 1s}
+ .banner .swiper-pagination-bullet-active.swiper-slide-active .drone-bg{-webkit-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;-moz-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;-ms-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;-o-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;animation:drone-bg-anime 2s ease-in-out 1 forwards 1s}
+ .banner .swiper-pagination-bullet-active .title{text-transform:uppercase;text-align:center;color:#44a8f2;font-weight:400;margin:75px auto 55px;line-height:1em}
+ .banner .swiper-pagination-bullet-active .title .light{display:block;font-weight:100;letter-spacing:-1.2px}
+ .banner .swiper-pagination-bullet-active .countdown-container{opacity:0;text-align:center;-webkit-transform:translate(0,50px);-moz-transform:translate(0,50px);-ms-transform:translate(0,50px);-o-transform:translate(0,50px);transform:translate(0,50px);-webkit-transition:all .5s .8s;-moz-transition:all .5s .8s;-ms-transition:all .5s .8s;-o-transition:all .5s .8s;transition:all .5s .8s}
+ .banner .swiper-pagination-bullet-active .countdown-container .time-item{text-transform:uppercase;position:relative;display:inline-block;color:#707473}
+ .banner .swiper-pagination-bullet-active .countdown-container .time-item.last .num{border-right-color:transparent}
+ .banner .swiper-pagination-bullet-active .countdown-container .time-item .unit{font-size:16px}
+ .banner .swiper-pagination-bullet-active .countdown-container .time-item .num{min-width:150px;font-size:66px;display:block;border-right:1px solid #ccebf4;line-height:.8em;margin-bottom:18px}
+ .banner .swiper-pagination-bullet-active .drone-container{position:absolute;width:616px;height:454px;left:50%;margin-left:-308px;bottom:-130px}
+ .banner .swiper-pagination-bullet-active .drone-container .drone-fg{position:absolute;left:0;top:0;width:100%;height:100%;background:url("//www3.djicdn.com/assets/images/homepage/countdown/drone-fg-3c88fea8626a6df93ce6e68bb03564e8.png") center center no-repeat;opacity:0}
+ .banner .swiper-pagination-bullet-active .drone-container .drone-bg{position:absolute;left:0;top:0;width:100%;height:100%;background:url("//www2.djicdn.com/assets/images/homepage/countdown/drone-bg-12ae3b09622bcdae97c2da582107ba2f.png") center center no-repeat;opacity:0}
+ .banner .swiper-pagination-bullet-active #countdown-canvas{position:absolute;left:0;top:0;width:100%;height:100%;background:url("//www2.djicdn.com/assets/images/homepage/countdown/canvas-bg.jpg") no-repeat center center}
+ .banner .swiper-pagination-bullet-active #drop-canvas{position:absolute;left:50%;margin-left:-290px;bottom:80px}
+ .banner .slide-flagship{background:#f7f8f9 url("//www3.djicdn.com/assets/images/homepage/banner-flagship-c1dd8dbeaf1b195c93e91e7fc5f74c29.jpg") center bottom no-repeat}
+ .banner .slide-flagship .container{position:relative}
+ .banner .slide-flagship .caption{position:absolute;top:0;left:0;padding-top:180px}
+ .banner .slide-flagship .caption .title, .banner .slide-flagship .caption .assist{color:#707473}
+ .banner .slide-flagship .line-more{text-transform:uppercase}
+ .banner .slide-flagship .flagship-countdown{display:none;position:absolute;left:50%;top:212px;font-weight:100;text-transform:uppercase;width:600px}
+ .banner .slide-flagship .flagship-countdown .text{color:#707473;font-size:18px;position:relative;top:-1px}
+ .banner .slide-flagship .flagship-countdown .num{display:inline-block;width:121px;font-size:80px;color:#44a8f2;text-align:right;font-weight:100}
+ .banner .slide-flagship .flagship-anime{opacity:0;visibility:hidden;position:absolute;left:0;top:0;right:0;width:100%;height:678px;z-index:-1;-webkit-transition:opacity .3s;-moz-transition:opacity .3s;-ms-transition:opacity .3s;-o-transition:opacity .3s;transition:opacity .3s}
+ .banner .slide-flagship .flagship-anime .l1{position:absolute;top:50%;right:50%;margin-top:33px;margin-right:-4px;width:1138px;height:114px}
+ .banner .slide-flagship .flagship-anime .l2{position:absolute;top:50%;left:50%;width:1283px;height:146px}
+ .banner .slide-flagship .flagship-anime .scissor{position:absolute;left:50%;margin-left:-100px;width:200px;height:200px}
+ .banner .slide-flagship .flagship-anime .scissor img{position:absolute}
+ .banner .slide-flagship .flagship-anime .scissor .i1{left:26px;top:0}
+ .banner .slide-flagship .flagship-anime .scissor .i2{top:30px;left:-12px}
+ .banner .slide-flagship .flagship-anime.flagship-active{visibility:visible;opacity:1}
+ .banner .slide-flagship .flagship-anime.flagship-active .scissor{-webkit-animation:3s flagship-s;-moz-animation:3s flagship-s;-ms-animation:3s flagship-s;-o-animation:3s flagship-s;animation:3s flagship-s}
+ .banner .slide-flagship .flagship-anime.flagship-active .i1{-webkit-animation:3s flagship-si1;-moz-animation:3s flagship-si1;-ms-animation:3s flagship-si1;-o-animation:3s flagship-si1;animation:3s flagship-si1}
+ .banner .slide-flagship .flagship-anime.flagship-active .i2{-webkit-animation:3s flagship-si2;-moz-animation:3s flagship-si2;-ms-animation:3s flagship-si2;-o-animation:3s flagship-si2;animation:3s flagship-si2}
+ .banner .slide-flagship .flagship-anime.flagship-active .l1{-webkit-animation:3s flagship-l1;-moz-animation:3s flagship-l1;-ms-animation:3s flagship-l1;-o-animation:3s flagship-l1;animation:3s flagship-l1;animation-delay:1.5s}
+ .banner .slide-flagship .flagship-anime.flagship-active .l2{-webkit-animation:3s flagship-l2;-moz-animation:3s flagship-l2;-ms-animation:3s flagship-l2;-o-animation:3s flagship-l2;animation:3s flagship-l2;animation-delay:1.5s}
+ .banner .slide-osmo{background-image:url("//www4.djicdn.com/assets/images/homepage/banner-osmo-8639564e4126fa5186908570d78252c1.jpg")}
+ .banner .slide-osmo .container{position:relative}
+ .banner .slide-osmo .caption{position:absolute;top:0;right:0;padding-top:200px}
+ .banner .slide-ronin{background-image:url("//www4.djicdn.com/assets/images/homepage/banner-ronin-f7dafe58adfcd7c9944cc2d2144af117.jpg")}
+ .banner .slide-ronin .caption{padding-top:200px;padding-left:10px}
+ .banner .slide-x5{background-image:url("//www1.djicdn.com/assets/images/homepage/banner-x5-adb7ca162aad86a237eb3ccb1b5fe626.jpg")}
+ .banner .slide-x5 .caption{padding-top:200px;padding-left:236px}
+ .banner .slide-inspire1{background-color:#f7f8f9}
+ .banner .slide-inspire1 .container{background-image:url("//www4.djicdn.com/assets/images/homepage/banner-inspire-1-black-e5bc55f23b88f8ae869d58a595133cb1.jpg");background-position:0 37%}
+ .banner .slide-inspire1 .caption{float:right;padding-top:241px}
+ .banner .slide-inspire1 .caption .title{color:#707473;font-size:32px}
+ .banner .slide-inspire1 .caption i.icon-banner-inspire1-black-text{background-image:url("//www1.djicdn.com/assets/images/homepage/banner-inspire-1-black-text-480ae6522b014e8fa577b1bff846637e.png");background-repeat:no-repeat;background-size:300px auto;width:300px;height:22px;display:inline-block}
+ .banner .slide-inspire1 .link-more{color:#707473}
+ .banner .slide-inspire1 .product-name{top:486px;left:166px}
+ .banner .slide-p3s{background-color:#f7f8f9}
+ .banner .slide-p3s .container{background-image:url("//www3.djicdn.com/assets/images/homepage/banner-p3s-66753695b5c4cbedb182f7cff7c63846.jpg");background-position:95% 40%}
+ .banner .slide-p3s .caption{padding-top:252px;padding-left:20px}
+ .banner .slide-p3s .product-name, .banner .slide-p3s .title, .banner .slide-p3s .assist, .banner .slide-p3s .link-more{color:#707473}
+ .banner .slide-p3s .product-name{right:170px;top:500px;width:320px}
+ .banner .slide-mg-1{background:#f7f8f9}
+ .banner .slide-mg-1 .container{background-image:url("//www2.djicdn.com/assets/images/homepage/banner-mg-1-5fc571941acee0f9fae28317924caa62.jpg");background-position:right 50%}
+ .banner .slide-mg-1 .caption{padding-top:170px;padding-left:5px}
+ .banner .slide-mg-1 .product-name, .banner .slide-mg-1 .title, .banner .slide-mg-1 .assist, .banner .slide-mg-1 .link-more{color:#707473}
+ .banner .slide-mg-1 .product-name{position:relative;text-align:left;margin-bottom:50px;font-size:30px;font-weight:400}
+ .banner .slide-zenmuse-xt{background-image:url("//www3.djicdn.com/assets/images/homepage/slider-zenmuse-xt-abf6fd822d9837c98f83d60a33232018.jpg");background-position:center 50px;background-repeat:no-repeat;background-size:auto;background-color:#f7f8f9}
+ .banner .slide-zenmuse-xt .container{position:relative;height:100%}
+ .banner .slide-zenmuse-xt .caption{position:absolute;top:0;right:0;padding-top:160px}
+ .banner .slide-zenmuse-xt .product-name, .banner .slide-zenmuse-xt .title, .banner .slide-zenmuse-xt .assist, .banner .slide-zenmuse-xt .link-more{color:#707473}
+ .banner .slide-ces{background-color:#f7f8fa}
+ .banner .slide-ces .ces-anime{position:absolute;left:0;top:0;width:100%;height:100%;z-index:-1}
+ .banner .slide-ces .caption{padding-top:252px;padding-left:5px}
+ .banner .slide-ces .product-name, .banner .slide-ces .title, .banner .slide-ces .assist, .banner .slide-ces .link-more{color:#707473}
+ .banner .slide-ces .product-name{left:30px;top:150px}
+ .banner .slide-p4{background-color:#f7f8f9}
+ .banner .slide-p4 .container{background-image:url("//www5.djicdn.com/assets/images/homepage/banner-p4-bb176b24b1b7a546b006439c8b6e90c3.jpg");background-position:right 40%}
+ .banner .slide-p4 .caption{padding-top:170px;padding-left:5px}
+ .banner .slide-p4 .product-name, .banner .slide-p4 .title, .banner .slide-p4 .assist, .banner .slide-p4 .link-more{color:#707473}
+ .banner .slide-p4 .product-name{position:relative;text-align:left;margin-bottom:50px;font-size:30px;font-weight:400}
+ .banner .slide-x5r{background-color:#f7f8f9}
+ .banner .slide-x5r .container{background-image:url("//www5.djicdn.com/assets/images/homepage/banner-x5r-311e185dc4e6095ce76e86c5864af44c.jpg");background-position:right 40%}
+ .banner .slide-x5r .caption{padding-top:170px;padding-left:5px}
+ .banner .slide-x5r .product-name, .banner .slide-x5r .title, .banner .slide-x5r .assist, .banner .slide-x5r .link-more{color:#707473}
+ .banner .slide-x5r .product-name{position:relative;text-align:left;margin-bottom:50px;font-size:30px;font-weight:400}
+ .banner .slide-ronin-mx{background-color:#f7f8f9}
+ .banner .slide-ronin-mx .container{background-image:url("//www2.djicdn.com/assets/images/homepage/ronin-mx/banner-ronin-mx-7c10510ddc3ae2c0f8c91be7e23443d4.jpg");background-position:97% 40%}
+ .banner .slide-ronin-mx .caption{padding-top:170px;padding-left:5px}
+ .banner .slide-ronin-mx .product-name, .banner .slide-ronin-mx .title, .banner .slide-ronin-mx .assist, .banner .slide-ronin-mx .link-more{color:#707473}
+ .banner .slide-ronin-mx .product-name{position:relative;text-align:left;margin-bottom:50px;font-size:30px;font-weight:400}
+ .banner .slide-matrice600{background-color:#f7f8f9}
+ .banner .slide-matrice600 .container{background-image:url("//www5.djicdn.com/assets/images/homepage/matrice600/banner-matrice600-b9f3a4ca8d1a09f69d363a84c98e7082.jpg");background-position:100% 40%}
+ .banner .slide-matrice600 .caption{padding-top:170px;padding-left:5px}
+ .banner .slide-matrice600 .product-name, .banner .slide-matrice600 .title, .banner .slide-matrice600 .assist, .banner .slide-matrice600 .link-more{color:#707473}
+ .banner .slide-matrice600 .product-name{position:relative;text-align:left;margin-bottom:50px;font-size:30px;font-weight:400}
+ .banner .slide-a3{background-color:#f7f8f9}
+ .banner .slide-a3 .container{background-image:url("//www3.djicdn.com/assets/images/homepage/a3/banner-a3-20eeb38fb988c9cf1abb90902718f970.jpg");background-position:100% 40%}
+ .banner .slide-a3 .caption{padding-top:170px;padding-left:5px}
+ .banner .slide-a3 .product-name, .banner .slide-a3 .title, .banner .slide-a3 .assist, .banner .slide-a3 .link-more{color:#707473}
+ .banner .slide-a3 .product-name{position:relative;text-align:left;margin-bottom:50px;font-size:30px;font-weight:400}
+ .banner .slide-p3p{background-color:#f7f8f9}
+ .banner .slide-p3p .container{background-image:url("//www3.djicdn.com/assets/images/homepage/banner-p3p-v2-96e33073779ca390e537ca9484a70001.jpg");background-position:right 36%}
+ .banner .slide-p3p .caption{padding-top:252px;padding-left:5px}
+ .banner .slide-p3p .product-name, .banner .slide-p3p .title, .banner .slide-p3p .assist, .banner .slide-p3p .link-more{color:#707473}
+ .banner .slide-p3p .product-name{right:124px;top:500px;width:380px}
+ .banner .slide-10-years{background:url("//www3.djicdn.com/assets/images/homepage/banner-10-years-c0bb4055e81880b6767dfb490dedce4a.jpg") no-repeat 62% 50%;background-size:cover;background-color:#f7f8f9}
+ .banner .slide-10-years .caption{padding-top:250px;padding-left:50px}
+ .banner .slide-10-years .title, .banner .slide-10-years .assist{color:#707473}
+ .banner .slide-cnnewyear{background:#f7f8f9 url("//www2.djicdn.com/assets/images/homepage/banner-mokeydrone-pc-49cc6ae82c864f39283bb81bb224412b.jpg") no-repeat center center;background-size:cover}
+ .banner .slide-cnnewyear .caption{padding-top:250px;padding-left:50px}
+ .banner .slide-cnnewyear .title, .banner .slide-cnnewyear .assist{color:#707473}
+ .banner .slide-cnnewyear .link-more{margin-right:26px}
+ .banner .slide-countdown{background-color:#f7f8f9;background-image:url("//www2.djicdn.com/assets/images/homepage/banner-countdown-a6af2122d042fc02dba91de4598f89c9.jpg");background-size:cover}
+ .banner .slide-countdown.swiper-slide-active .countdown-container{-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);opacity:1}
+ .banner .slide-countdown.swiper-slide-active .drone-fg{-webkit-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;-moz-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;-ms-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;-o-animation:drone-fg-anime 2s ease-in-out 1 forwards 1s;animation:drone-fg-anime 2s ease-in-out 1 forwards 1s}
+ .banner .slide-countdown.swiper-slide-active .drone-bg{-webkit-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;-moz-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;-ms-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;-o-animation:drone-bg-anime 2s ease-in-out 1 forwards 1s;animation:drone-bg-anime 2s ease-in-out 1 forwards 1s}
+ .banner .slide-countdown .title{text-transform:uppercase;text-align:center;color:#44a8f2;font-weight:400;margin:75px auto 55px;line-height:1em}
+ .banner .slide-countdown .title .light{display:block;font-weight:100;letter-spacing:-1.2px}
+ .banner .slide-countdown .countdown-container{opacity:0;text-align:center;-webkit-transform:translate(0,50px);-moz-transform:translate(0,50px);-ms-transform:translate(0,50px);-o-transform:translate(0,50px);transform:translate(0,50px);-webkit-transition:all .5s .8s;-moz-transition:all .5s .8s;-ms-transition:all .5s .8s;-o-transition:all .5s .8s;transition:all .5s .8s}
+ .banner .slide-countdown .countdown-container .time-item{text-transform:uppercase;position:relative;display:inline-block;color:#707473}
+ .banner .slide-countdown .countdown-container .time-item.last .num{border-right-color:transparent}
+ .banner .slide-countdown .countdown-container .time-item .unit{font-size:16px}
+ .banner .slide-countdown .countdown-container .time-item .num{min-width:150px;font-size:66px;display:block;border-right:1px solid #ccebf4;line-height:.8em;margin-bottom:18px}
+ .banner .slide-countdown .drone-container{position:absolute;width:616px;height:454px;left:50%;margin-left:-308px;bottom:-130px}
+ .banner .slide-countdown .drone-container .drone-fg{position:absolute;left:0;top:0;width:100%;height:100%;background:url("//www3.djicdn.com/assets/images/homepage/countdown/drone-fg-3c88fea8626a6df93ce6e68bb03564e8.png") center center no-repeat;opacity:0}
+ .banner .slide-countdown .drone-container .drone-bg{position:absolute;left:0;top:0;width:100%;height:100%;background:url("//www2.djicdn.com/assets/images/homepage/countdown/drone-bg-12ae3b09622bcdae97c2da582107ba2f.png") center center no-repeat;opacity:0}
+ .grids-section{margin:0;background:#fff;padding:2.5px 2.5px 0}
+ .grids-section div{margin:0;overflow:hidden;padding:0}
+ .grids-section .row>div{padding:2.5px 2.5px 0}
+ .grids-section .grid-item{overflow:hidden;line-height:0;display:block;position:relative;min-height:262px;color:#fff}
+ .grids-section .grid-item:hover{color:#fff}
+ .grids-section .grid-item:hover .caption-white{background:0 0}
+ .grids-section .grid-item:hover img{-webkit-transform:scale(1.03);-moz-transform:scale(1.03);-ms-transform:scale(1.03);-o-transform:scale(1.03);transform:scale(1.03)}
+ .grids-section .grid-item img{width:100%;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);-webkit-transition:transform 1s;-moz-transition:transform 1s;-ms-transition:transform 1s;-o-transition:transform 1s;transition:transform 1s}
+ .grids-section .grid-item .text-wrap{position:absolute;height:50%;width:100%;left:0;bottom:0;background:-webkit-linear-gradient(-90deg,rgba(237,237,237,0)0%,rgba(0,0,0,.54)100%);background:-moz-linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.54)100%);background:-ms-linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.54)100%);background:-o-linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.54)100%);background:linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.54)100%)}
+ .grids-section .grid-item .text-wrap.caption-white{background:-webkit-linear-gradient(-90deg,rgba(237,237,237,0)0%,rgba(0,0,0,.29)100%);background:-moz-linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.29)100%);background:-ms-linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.29)100%);background:-o-linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.29)100%);background:linear-gradient(-180deg,rgba(237,237,237,0)0%,rgba(0,0,0,.29)100%)}
+ .grids-section .grid-item .text{position:absolute;left:30px;bottom:25px}
+ .grids-section .grid-item .text .title{position:relative;display:inline-block;text-transform:uppercase;font-weight:400;padding-bottom:13px;margin-bottom:13px;line-height:1.3;font-size:20px}
+@media (max-width:1440px){ .grids-section .grid-item .text .title{font-size:16px;padding-bottom:10px;margin-bottom:10px}
+}
+ .grids-section .grid-item .text .title:after{width:60%;height:1px;background:#fff;display:block;content:"";position:absolute;left:0;bottom:0}
+ .grids-section .grid-item .text .main{font-weight:300;line-height:1.3;text-transform:uppercase;font-size:15px}
+@media (max-width:1440px){ .grids-section .grid-item .text .main{font-size:13px}
+}
+ .grids-section .grid-item .text.caption-white .title, .grids-section .grid-item .text.caption-white .main{color:#fff}
+ .grids-section .grid-item .text.caption-grey .title, .grids-section .grid-item .text.caption-grey .main{color:#707473}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){ .banner .slide-inspire1 .container{background-image:url("//www4.djicdn.com/assets/images/homepage/banner-inspire-1-black-e5bc55f23b88f8ae869d58a595133cb1.jpg")}
+ .banner .slide-p3s .container{background-image:url("//www1.djicdn.com/assets/images/homepage/banner-p3s@2x-53703f95342bd71362cca784092cae4f.jpg");background-size:610px 337px}
+ .banner .slide-p3p .container{background-image:url("//www1.djicdn.com/assets/images/homepage/banner-p3p-v2@2x-4fc103bfd835ac22962b89e7498ceabc.jpg");background-size:633px 428px}
+ .banner .slide-p4 .container{background-image:url("//www3.djicdn.com/assets/images/homepage/banner-p4-2x-3234acb994075c56885d462f82fe7db0.jpg");background-size:750px 507px}
+ .banner .slide-a3 .container{background-image:url("//www1.djicdn.com/assets/images/homepage/a3/banner-a3@2x-437e7f1772f6933c33fd85d0114ed35c.jpg");background-size:750px 507px}
+ .banner .slide-matrice600 .container{background-image:url("//www4.djicdn.com/assets/images/homepage/matrice600/banner-matrice600@2x-1ca69b86118687cd3dd1c3cd68e5a61e.jpg");background-size:750px 507px}
+ .banner .slide-ronin-mx .container{background-image:url("//www5.djicdn.com/assets/images/homepage/ronin-mx/banner-ronin-mx@2x-3309cf22acd9628b72a237106a4e82e3.jpg");background-size:650px 439px}
+}
+@media (max-width:767px){{min-width:initial}
+ .banner .slide-p3p .caption, .banner .slide-p3s .caption, .banner .slide-ronin .caption{padding-left:60px}
+ .banner .swiper-slide .container{padding-left:0;padding-right:0;height:100%}
+ .banner .swiper-slide .caption{padding-top:206px;padding-left:60px;padding-right:60px;margin-left:auto;margin-right:auto;float:none;height:100%}
+ .banner .swiper-slide .product-name{position:static;width:auto}
+ .banner .slide-inspire1 .container{background-position:94% 30%}
+ .banner .slide-inspire1 .caption i.icon-banner-inspire1-black-text{position:relative;left:50%;-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0);-o-transform:translate(-50%,0);transform:translate(-50%,0)}
+ .banner .slide-inspire1 .caption .title{font-size:18px}
+ .banner .swiper-container-banner .swiper-button-prev, .banner .swiper-container-banner .swiper-button-next{opacity:1!important}
+ .banner .swiper-container-banner .swiper-pagination{opacity:.4!important}
+ .banner .swiper-container-banner .swiper-pagination .swiper-pagination-bullet{width:10px}
+ .banner .swiper-container-banner .swiper-pagination .swiper-pagination-bullet:after{width:10px;height:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px}
+ .banner .swiper-slide{height:573px}
+ .banner .swiper-slide .caption{position:static}
+ .banner .swiper-slide .product-name{text-align:center}
+ .banner .swiper-slide .title{font-size:18px;line-height:32px;margin-top:14px;text-align:center}
+ .banner .swiper-slide .assist{font-size:18px;line-height:26px;text-align:center;display:none}
+ .banner .swiper-slide .assist .newYearBanner{display:none}
+ .banner .swiper-slide .footer{text-align:center;margin-top:40px}
+ .banner .swiper-slide .footer .btn-buy-primary{white-space:nowrap;display:block;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}
+ .banner .slide-zenmuse-xt{background-image:url("//www4.djicdn.com/assets/images/homepage/slider-zenmuse-xt-mobile-f91148d1f4bdd66f36a0e981d1f71bbb.jpg");background-position:center top;background-size:contain}
+ .banner .slide-2col .container{background-position:center 10%;background-size:90% auto}
+ .banner .slide-2col .caption{padding-top:233px}
+ .banner .slide-inspire1 .container{background-position:center 2%}
+ .banner .slide-p3s .product-name, .banner .slide-p3p .product-name{text-align:left}
+ .banner .slide-p3s .product-name .icon{-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0);-o-transform:translate(-50%,0);transform:translate(-50%,0);position:relative;left:50%;text-align:left}
+ .banner .slide-p3p .product-name .icon{position:relative;left:50%;text-align:left}
+ .banner .slide-p3p .container{background-image:url("//www2.djicdn.com/assets/images/mobile/homepage/banner-p3p-v2-ac15c76f5eee19097e1503fc1dd3a6c4.jpg")}
+ .banner .slide-p3p .product-name .icon{-webkit-transform:translate(-50%,0)scale(.9);-moz-transform:translate(-50%,0)scale(.9);-ms-transform:translate(-50%,0)scale(.9);-o-transform:translate(-50%,0)scale(.9);transform:translate(-50%,0)scale(.9)}
+ .banner .slide-osmo{background-image:url("//www5.djicdn.com/assets/images/mobile/homepage/banner-osmo-60efe98d8a6a9b62614ad9c334dbb7dd.jpg")}
+ .banner .slide-x5{background-image:url("//www5.djicdn.com/assets/images/mobile/homepage/banner-x5-4277bfac72df612b8d421025a69d939e.jpg")}
+ .banner .slide-inspire1 .container{background-image:url("//www4.djicdn.com/assets/images/mobile/homepage/banner-inspire1-black-30d25a373f85ec2c511312ae06337d87.jpg")}
+ .banner .slide-p3s .container{background-image:url("//www4.djicdn.com/assets/images/mobile/homepage/banner-p3s-8ef5c4bb9dff242c37ef6337aaa9121d.jpg")}
+ .banner .slide-10-years{background:0 0;background-color:#f7f8f9}
+ .banner .slide-10-years .container{background-image:url("//www3.djicdn.com/assets/images/mobile/homepage/banner-10-years-842c56c66a32e395bde148f16070bd8a.jpg");background-size:367px auto}
+ .banner .slide-10-years .container .title{margin-top:90px}
+ .banner .slide-10-years .container .assist{display:block}
+ .banner .slide-cnnewyear{background-image:url("//www5.djicdn.com/assets/images/mobile/homepage/banner-mokeydrone-mobile-118f998fabbc5b036eda18d22c638fc3.jpg");background-size:367px auto;background-position:top 20px center}
+ .banner .slide-cnnewyear .title{margin-top:140px}
+ .banner .slide-cnnewyear .assist{display:block}
+ .banner .slide-cnnewyear .link-more{margin:0 13px}
+ .banner .slide-2col.slide-countdown{background-image:url("//www1.djicdn.com/assets/images/mobile/homepage/banner-countdown-a75c32db0a88a3e4b5dea152dd605d6b.jpg");background-position:center bottom}
+ .banner .slide-2col.slide-countdown .caption{padding-top:30px}
+ .banner .slide-2col.slide-countdown .countdown-container .time-item{width:25%}
+ .banner .slide-2col.slide-countdown .countdown-container .time-item .num{min-width:100%;font-size:24px;padding:0}
+ .banner .slide-2col.slide-countdown .countdown-container .time-item .unit{font-size:13px}
+ .banner .slide-2col.slide-countdown .drone-container{display:none}
+ .banner .slide-p4 .container{background-position:50% 7%}
+ .banner .slide-p4 .product-name{margin-bottom:0}
+ .banner .slide-p4 .title{margin-top:0}
+ .banner .slide-ronin-mx .container{background-position:-20% 7%}
+ .banner .slide-ronin-mx .product-name, .banner .slide-a3 .product-name, .banner .slide-matrice600 .product-name{margin-bottom:0}
+ .grids-section .grid-item, .gallery_imgbox{min-height:0}
+ .grid-item-skypixel .cover-wrap .cover{opacity:1;visibility:visible}
+}
+.dji-zh-CN .switch-box{position:absolute;left:52%;top:344px;width:700px}
+.dji-zh-CN .switch-box .line{width:1px;height:100px;background-color:#979797;float:left}
+.dji-zh-CN .switch-box ul{padding-left:10px;left:-9px}
+.dji-zh-CN .switch-box ul,.dji-zh-CN .switch-box ul li{position:relative;width:650px;height:100px}
+.dji-zh-CN .switch-box ul li.hider{opacity:0}
+.dji-zh-CN .switch-box ul li .point{width:10px;height:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;background-color:#979797;position:absolute;left:-5px;top:45px}
+.dji-zh-CN .switch-box ul li .date{float:left;width:180px;text-align:center;font-size:19px;height:100px;line-height:100px;color:#979797}
+.dji-zh-CN .switch-box ul li .switch-content{float:left;width:335px;padding-top:10px}
+.dji-zh-CN .switch-box ul li .switch-content h3{color:#44a8f2;font-size:16px;line-height:30px;height:30px}
+.dji-zh-CN .switch-box ul li .switch-content p{color:#979797;font-size:13px}
+@-moz-keyframes down-in{0%{-webkit-transform:translate3d(0,50px,0);-moz-transform:translate3d(0,50px,0);-ms-transform:translate3d(0,50px,0);-o-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0);opacity:0}
+100%{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}
+}
+@-webkit-keyframes down-in{0%{-webkit-transform:translate3d(0,50px,0);-moz-transform:translate3d(0,50px,0);-ms-transform:translate3d(0,50px,0);-o-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0);opacity:0}
+100%{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}
+}
+@-o-keyframes down-in{0%{-webkit-transform:translate3d(0,50px,0);-moz-transform:translate3d(0,50px,0);-ms-transform:translate3d(0,50px,0);-o-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0);opacity:0}
+100%{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}
+}
+@keyframes down-in{0%{-webkit-transform:translate3d(0,50px,0);-moz-transform:translate3d(0,50px,0);-ms-transform:translate3d(0,50px,0);-o-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0);opacity:0}
+100%{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}
+}
+@-moz-keyframes skypixel-slide1{0%,23%{opacity:1}
+33%,56%,66%,89%{opacity:0}
+100%{opacity:1}
+}
+@-webkit-keyframes skypixel-slide1{0%,23%{opacity:1}
+33%,56%,66%,89%{opacity:0}
+100%{opacity:1}
+}
+@-o-keyframes skypixel-slide1{0%,23%{opacity:1}
+33%,56%,66%,89%{opacity:0}
+100%{opacity:1}
+}
+@keyframes skypixel-slide1{0%,23%{opacity:1}
+33%,56%,66%,89%{opacity:0}
+100%{opacity:1}
+}
+@-moz-keyframes skypixel-slide2{0%,23%{opacity:0}
+33%,56%{opacity:1}
+66%,89%,100%{opacity:0}
+}
+@-webkit-keyframes skypixel-slide2{0%,23%{opacity:0}
+33%,56%{opacity:1}
+66%,89%,100%{opacity:0}
+}
+@-o-keyframes skypixel-slide2{0%,23%{opacity:0}
+33%,56%{opacity:1}
+66%,89%,100%{opacity:0}
+}
+@keyframes skypixel-slide2{0%,23%{opacity:0}
+33%,56%{opacity:1}
+66%,89%,100%{opacity:0}
+}
+@-moz-keyframes skypixel-slide3{0%,23%,33%,56%{opacity:0}
+66%,89%{opacity:1}
+100%{opacity:0}
+}
+@-webkit-keyframes skypixel-slide3{0%,23%,33%,56%{opacity:0}
+66%,89%{opacity:1}
+100%{opacity:0}
+}
+@-o-keyframes skypixel-slide3{0%,23%,33%,56%{opacity:0}
+66%,89%{opacity:1}
+100%{opacity:0}
+}
+@keyframes skypixel-slide3{0%,23%,33%,56%{opacity:0}
+66%,89%{opacity:1}
+100%{opacity:0}
+}
+@-moz-keyframes flagship-l1{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(-900px);-moz-transform:translateX(-900px);-ms-transform:translateX(-900px);-o-transform:translateX(-900px);transform:translateX(-900px);opacity:0}
+}
+@-webkit-keyframes flagship-l1{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(-900px);-moz-transform:translateX(-900px);-ms-transform:translateX(-900px);-o-transform:translateX(-900px);transform:translateX(-900px);opacity:0}
+}
+@-o-keyframes flagship-l1{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(-900px);-moz-transform:translateX(-900px);-ms-transform:translateX(-900px);-o-transform:translateX(-900px);transform:translateX(-900px);opacity:0}
+}
+@keyframes flagship-l1{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(-900px);-moz-transform:translateX(-900px);-ms-transform:translateX(-900px);-o-transform:translateX(-900px);transform:translateX(-900px);opacity:0}
+}
+@-moz-keyframes flagship-l2{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(900px);-moz-transform:translateX(900px);-ms-transform:translateX(900px);-o-transform:translateX(900px);transform:translateX(900px);opacity:0}
+}
+@-webkit-keyframes flagship-l2{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(900px);-moz-transform:translateX(900px);-ms-transform:translateX(900px);-o-transform:translateX(900px);transform:translateX(900px);opacity:0}
+}
+@-o-keyframes flagship-l2{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(900px);-moz-transform:translateX(900px);-ms-transform:translateX(900px);-o-transform:translateX(900px);transform:translateX(900px);opacity:0}
+}
+@keyframes flagship-l2{from{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
+to{-webkit-transform:translateX(900px);-moz-transform:translateX(900px);-ms-transform:translateX(900px);-o-transform:translateX(900px);transform:translateX(900px);opacity:0}
+}
+@-moz-keyframes flagship-s{0%{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}
+40%,50%,60%{-webkit-transform:translateY(400px);-moz-transform:translateY(400px);-ms-transform:translateY(400px);-o-transform:translateY(400px);transform:translateY(400px)}
+100%{-webkit-transform:translateY(-150px);-moz-transform:translateY(-150px);-ms-transform:translateY(-150px);-o-transform:translateY(-150px);transform:translateY(-150px)}
+}
+@-webkit-keyframes flagship-s{0%{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}
+40%,50%,60%{-webkit-transform:translateY(400px);-moz-transform:translateY(400px);-ms-transform:translateY(400px);-o-transform:translateY(400px);transform:translateY(400px)}
+100%{-webkit-transform:translateY(-150px);-moz-transform:translateY(-150px);-ms-transform:translateY(-150px);-o-transform:translateY(-150px);transform:translateY(-150px)}
+}
+@-o-keyframes flagship-s{0%{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}
+40%,50%,60%{-webkit-transform:translateY(400px);-moz-transform:translateY(400px);-ms-transform:translateY(400px);-o-transform:translateY(400px);transform:translateY(400px)}
+100%{-webkit-transform:translateY(-150px);-moz-transform:translateY(-150px);-ms-transform:translateY(-150px);-o-transform:translateY(-150px);transform:translateY(-150px)}
+}
+@keyframes flagship-s{0%{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}
+40%,50%,60%{-webkit-transform:translateY(400px);-moz-transform:translateY(400px);-ms-transform:translateY(400px);-o-transform:translateY(400px);transform:translateY(400px)}
+100%{-webkit-transform:translateY(-150px);-moz-transform:translateY(-150px);-ms-transform:translateY(-150px);-o-transform:translateY(-150px);transform:translateY(-150px)}
+}
+@-moz-keyframes flagship-si1{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(-20deg);-moz-transform:rotate(-20deg);-ms-transform:rotate(-20deg);-o-transform:rotate(-20deg);transform:rotate(-20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@-webkit-keyframes flagship-si1{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(-20deg);-moz-transform:rotate(-20deg);-ms-transform:rotate(-20deg);-o-transform:rotate(-20deg);transform:rotate(-20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@-o-keyframes flagship-si1{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(-20deg);-moz-transform:rotate(-20deg);-ms-transform:rotate(-20deg);-o-transform:rotate(-20deg);transform:rotate(-20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@keyframes flagship-si1{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(-20deg);-moz-transform:rotate(-20deg);-ms-transform:rotate(-20deg);-o-transform:rotate(-20deg);transform:rotate(-20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@-moz-keyframes flagship-si2{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(20deg);-moz-transform:rotate(20deg);-ms-transform:rotate(20deg);-o-transform:rotate(20deg);transform:rotate(20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@-webkit-keyframes flagship-si2{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(20deg);-moz-transform:rotate(20deg);-ms-transform:rotate(20deg);-o-transform:rotate(20deg);transform:rotate(20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@-o-keyframes flagship-si2{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(20deg);-moz-transform:rotate(20deg);-ms-transform:rotate(20deg);-o-transform:rotate(20deg);transform:rotate(20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@keyframes flagship-si2{0%,40%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+50%{-webkit-transform:rotate(20deg);-moz-transform:rotate(20deg);-ms-transform:rotate(20deg);-o-transform:rotate(20deg);transform:rotate(20deg)}
+60%,100%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+}
+@-moz-keyframes drone-bg-anime{0%,40%{opacity:0;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(26px,28px);-moz-transform:translate(26px,28px);-ms-transform:translate(26px,28px);-o-transform:translate(26px,28px);transform:translate(26px,28px)}
+}
+@-webkit-keyframes drone-bg-anime{0%,40%{opacity:0;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(26px,28px);-moz-transform:translate(26px,28px);-ms-transform:translate(26px,28px);-o-transform:translate(26px,28px);transform:translate(26px,28px)}
+}
+@-o-keyframes drone-bg-anime{0%,40%{opacity:0;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(26px,28px);-moz-transform:translate(26px,28px);-ms-transform:translate(26px,28px);-o-transform:translate(26px,28px);transform:translate(26px,28px)}
+}
+@keyframes drone-bg-anime{0%,40%{opacity:0;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(26px,28px);-moz-transform:translate(26px,28px);-ms-transform:translate(26px,28px);-o-transform:translate(26px,28px);transform:translate(26px,28px)}
+}
+@-moz-keyframes drone-fg-anime{0%{opacity:0;-webkit-transform:translate(0,30px);-moz-transform:translate(0,30px);-ms-transform:translate(0,30px);-o-transform:translate(0,30px);transform:translate(0,30px)}
+40%{opacity:1;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(-2px,-26px);-moz-transform:translate(-2px,-26px);-ms-transform:translate(-2px,-26px);-o-transform:translate(-2px,-26px);transform:translate(-2px,-26px)}
+}
+@-webkit-keyframes drone-fg-anime{0%{opacity:0;-webkit-transform:translate(0,30px);-moz-transform:translate(0,30px);-ms-transform:translate(0,30px);-o-transform:translate(0,30px);transform:translate(0,30px)}
+40%{opacity:1;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(-2px,-26px);-moz-transform:translate(-2px,-26px);-ms-transform:translate(-2px,-26px);-o-transform:translate(-2px,-26px);transform:translate(-2px,-26px)}
+}
+@-o-keyframes drone-fg-anime{0%{opacity:0;-webkit-transform:translate(0,30px);-moz-transform:translate(0,30px);-ms-transform:translate(0,30px);-o-transform:translate(0,30px);transform:translate(0,30px)}
+40%{opacity:1;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(-2px,-26px);-moz-transform:translate(-2px,-26px);-ms-transform:translate(-2px,-26px);-o-transform:translate(-2px,-26px);transform:translate(-2px,-26px)}
+}
+@keyframes drone-fg-anime{0%{opacity:0;-webkit-transform:translate(0,30px);-moz-transform:translate(0,30px);-ms-transform:translate(0,30px);-o-transform:translate(0,30px);transform:translate(0,30px)}
+40%{opacity:1;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
+100%{opacity:1;-webkit-transform:translate(-2px,-26px);-moz-transform:translate(-2px,-26px);-ms-transform:translate(-2px,-26px);-o-transform:translate(-2px,-26px);transform:translate(-2px,-26px)}
+}
+.swiper-container{margin:0 auto;position:relative;overflow:hidden;z-index:1}
+.swiper-container-no-flexbox .swiper-slide{float:left}
+.swiper-container-vertical>.swiper-wrapper{-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column}
+.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+.swiper-container-android .swiper-slide,.swiper-wrapper{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-o-transform:translate(0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.swiper-container-multirow>.swiper-wrapper{-webkit-box-lines:multiple;-moz-box-lines:multiple;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+.swipree-mode>.swiper-wrapper{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 auto}
+.swiper-slide{-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;width:100%;height:100%;position:relative}
+.swiper-container .swiper-notification{position:absolute;left:0;top:0;pointer-events:none;opacity:0;z-index:-1000}
+.swiper-wp8-horizontal{-ms-touch-action:pan-y;touch-action:pan-y}
+.swiper-wp8-vertical{-ms-touch-action:pan-x;touch-action:pan-x}
+.swiper-button-prev,.swiper-button-next{position:absolute;top:50%;width:27px;height:44px;margin-top:-22px;z-index:10;cursor:pointer;-moz-background-size:27px 44px;-webkit-background-size:27px 44px;background-size:27px 44px;background-position:center;background-repeat:no-repeat}
+.swiper-button-prev.swiper-button-disabled,.swiper-button-next.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}
+.swiper-button-prev,.swiper-container-rtl .swiper-button-next{background-image:url("//www1.djicdn.com/assets/data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3Dhttp%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%20viewBox%3D0%200%2027%2044%3E%3Cpath%20d%3DM0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z%20fill%3D%23007aff%2F%3E%3C%2Fsvg%3E");left:10px;right:auto}
+.swiper-button-prev.swiper-button-black,.swiper-container-rtl .swiper-button-next.swiper-button-black{background-image:url("//www2.djicdn.com/assets/data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3Dhttp%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%20viewBox%3D0%200%2027%2044%3E%3Cpath%20d%3DM0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z%20fill%3D%23000000%2F%3E%3C%2Fsvg%3E")}
+.swiper-button-prev.swiper-button-white,.swiper-container-rtl .swiper-button-next.swiper-button-white{background-image:url("//www1.djicdn.com/assets/data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3Dhttp%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%20viewBox%3D0%200%2027%2044%3E%3Cpath%20d%3DM0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z%20fill%3D%23ffffff%2F%3E%3C%2Fsvg%3E")}
+.swiper-button-next,.swiper-container-rtl .swiper-button-prev{background-image:url("//www3.djicdn.com/assets/data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3Dhttp%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%20viewBox%3D0%200%2027%2044%3E%3Cpath%20d%3DM27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z%20fill%3D%23007aff%2F%3E%3C%2Fsvg%3E");right:10px;left:auto}
+.swiper-button-next.swiper-button-black,.swiper-container-rtl .swiper-button-prev.swiper-button-black{background-image:url("//www4.djicdn.com/assets/data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3Dhttp%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%20viewBox%3D0%200%2027%2044%3E%3Cpath%20d%3DM27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z%20fill%3D%23000000%2F%3E%3C%2Fsvg%3E")}
+.swiper-button-next.swiper-button-white,.swiper-container-rtl .swiper-button-prev.swiper-button-white{background-image:url("//www3.djicdn.com/assets/data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3Dhttp%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%20viewBox%3D0%200%2027%2044%3E%3Cpath%20d%3DM27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z%20fill%3D%23ffffff%2F%3E%3C%2Fsvg%3E")}
+.swiper-pagination{position:absolute;text-align:center;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);z-index:10}
+.swiper-pagination.swiper-pagination-hidden{opacity:0}
+.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2}
+button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none}
+.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}
+.swiper-pagination-white .swiper-pagination-bullet{background:#fff}
+.swiper-pagination-bullet-active{opacity:1;background:#007aff}
+.swiper-pagination-white .swiper-pagination-bullet-active{background:#fff}
+.swiper-pagination-black .swiper-pagination-bullet-active{background:#000}
+.swiper-container-vertical>.swiper-pagination{right:10px;top:50%;-webkit-transform:translate3d(0,-50%,0);-moz-transform:translate3d(0,-50%,0);-o-transform:translate(0,-50%);-ms-transform:translate3d(0,-50%,0);transform:translate3d(0,-50%,0)}
+.swiper-container-vertical>.swiper-pagination .swiper-pagination-bullet{margin:5px 0;display:block}
+.swiper-container-horizontal>.swiper-pagination{bottom:10px;left:0;width:100%}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 5px}
+.swiper-container-3d{-webkit-perspective:1200px;-moz-perspective:1200px;-o-perspective:1200px;perspective:1200px}
+.swiper-container-3d .swiper-wrapper,.swiper-container-3d .swiper-slide,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top,.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-cube-shadow{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d}
+.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top,.swiper-container-3d .swiper-slide-shadow-bottom{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:10}
+.swiper-container-3d .swiper-slide-shadow-left{background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0))}
+.swiper-container-3d .swiper-slide-shadow-right{background-image:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0))}
+.swiper-container-3d .swiper-slide-shadow-top{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0))}
+.swiper-container-3d .swiper-slide-shadow-bottom{background-image:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-moz-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0))}
+.swiper-container-coverflow .swiper-wrapper{-ms-perspective:1200px}
+.swiper-container-fade.swiper-container-free-mode .swiper-slide{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out}
+.swiper-container-fade .swiper-slide,.swiper-container-fade .swiper-slide .swiper-slide{pointer-events:none}
+.swiper-container-fade .swiper-slide-active,.swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}
+.swiper-container-cube{overflow:visible}
+.swiper-container-cube .swiper-slide{pointer-events:none;visibility:hidden;-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden;width:100%;height:100%;z-index:1}
+.swiper-container-cube.swiper-container-rtl .swiper-slide{-webkit-transform-origin:100% 0;-moz-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0}
+.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-next,.swiper-container-cube .swiper-slide-prev,.swiper-container-cube .swiper-slide-next+.swiper-slide{pointer-events:auto;visibility:visible}
+.swiper-container-cube .swiper-slide-shadow-top,.swiper-container-cube .swiper-slide-shadow-bottom,.swiper-container-cube .swiper-slide-shadow-left,.swiper-container-cube .swiper-slide-shadow-right{z-index:0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden}
+.swiper-container-cube .swiper-cube-shadow{position:absolute;left:0;bottom:0;width:100%;height:100%;background:#000;opacity:.6;-webkit-filter:blur(50px);filter:blur(50px);z-index:0}
+.swiper-scrollbar{border-radius:10px;position:relative;-ms-touch-action:none;background:rgba(0,0,0,.1)}
+.swiper-container-horizontal>.swiper-scrollbar{position:absolute;left:1%;bottom:3px;z-index:50;height:5px;width:98%}
+.swiper-container-vertical>.swiper-scrollbar{position:absolute;right:3px;top:1%;z-index:50;width:5px;height:98%}
+.swiper-scrollbar-drag{height:100%;width:100%;position:relative;background:rgba(0,0,0,.5);border-radius:10px;left:0;top:0}
+.swiper-scrollbar-cursor-drag{cursor:move}
+.swiper-lazy-preloader{width:42px;height:42px;position:absolute;left:50%;top:50%;margin-left:-21px;margin-top:-21px;z-index:10;-webkit-transform-origin:50%;-moz-transform-origin:50%;transform-origin:50%;-webkit-animation:swiper-preloader-spin 1s steps(12,end)infinite;-moz-animation:swiper-preloader-spin 1s steps(12,end)infinite;animation:swiper-preloader-spin 1s steps(12,end)infinite}
+.swiper-lazy-preloader:after{display:block;content:"";width:100%;height:100%;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-position:50%;-webkit-background-size:100%;background-size:100%;background-repeat:no-repeat}
+.swiper-lazy-preloader-white:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
+@-webkit-keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg)}
+}
+@keyframes swiper-preloader-spin{100%{transform:rotate(360deg)}
+}

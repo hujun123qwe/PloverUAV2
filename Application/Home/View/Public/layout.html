@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" type="image/x-icon" href="__ROOT__/logo.png">
 
     <link rel="stylesheet" type="text/css" href="__CUI__/css/cui.min.css">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/home_dji.css">
     <link rel="stylesheet" type="text/css" href="__HOME_CSS__/home.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/libs/animate/animate.min.css">
     <block name="style"></block>
@@ -57,7 +58,43 @@
                     <block name="main">这里是内容</block>
                 </div>
             </div>
-
+        <div class="container-fluid grids-section">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <a href="" class="grid-item">
+                        <img src="//www5.djicdn.com/cms_uploads/grid_picture/image/1435/e0c80b73fd597494311e0bceca2d49d8.png">
+                        <div class="text-wrap">
+                            <div class="text">
+                                <h3 class="title">新闻动态</h3>
+                                <div class="main">了解啄木鸟公司的最新动向</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="http://www.dji.com/cn/showcase?from=site_brandsite_showcase" class="grid-item">
+                        <img src="//www3.djicdn.com/cms_uploads/grid_picture/image/1411/b445fc6076275440852446d412c49cf7.jpg">
+                        <div class="text-wrap">
+                            <div class="text">
+                                <h3 class="title">精彩视频</h3>
+                                <div class="main">让我们一起欣赏</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="http://www.dji.com/cn/event?from=site_brandsite_event" class="grid-item">
+                        <img src="//www3.djicdn.com/cms_uploads/grid_picture/image/1419/event.jpg">
+                        <div class="text-wrap caption-white">
+                            <div class="text">
+                                <h3 class="title">瞬间一刻</h3>
+                                <div class="main">在那一瞬间发生的不凡</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                </div>
+        </div>
             <div class="clearfix full-foooter">
                 <block name="footer">
                     <div class="footer">
@@ -65,12 +102,7 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-6">
                                     <h4>
-                                      <php>if(C('WEB_SITE_LOGO')):</php>
-                                        
-                                            <img alt="logo" style="width:220px;" src="{$Think.config.WEB_SITE_LOGO|get_cover}">
-                                        <php>else:</php>
-                                            <h3><a href="{:C('WEBSITE_DOMAIN')}">{:C('PRODUCT_LOGO')}</a></h3>
-                                        <php>endif;</php>
+                                        <img alt="logo" style="width:220px;" src="__HOME_IMG__/index/logo_index.png">
                                     </h4>
                                     <p class="text-muted">{:C('WEB_SITE_DESCRIPTION')}</p>
                                 </div>
