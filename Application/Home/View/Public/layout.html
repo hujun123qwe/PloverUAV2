@@ -29,34 +29,56 @@
 </head>
 
 <body>
-    <block name="wrap">
-        <div class="clearfix full-wrap">
-            <div style="height:70px; width:100%;box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);margin-bottom: 8px;">
-	        <div class="container some">
-                <a href="{$Think.config.HOME_PAGE}" style="margin-left:240px;width:405px;height:60px;display:block;float:left;"></a>
-	             <div class="nav navbar navbar-right" style="margin-top:10px;margin-bottom:10px;">
-                     <li class="dropdown">
-                         <a href="{$vo.href}" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            LANGUAGE <span class="caret"></span>
-                         </a>
-                         <ul class="dropdown-menu">
-                         	<li><a href="{$Think.config.HOME_PAGE}">简体中文</a></li>
-                            <li><a href="{$Think.config.HOME_PAGE}">ENGLISH</a></li>
-                            <li><a href="{$Think.config.HOME_PAGE}">한국어</a></li>
-                         </ul>
-                     </li>
-	        	</div>
-	    	</div>
+<block name="wrap">
+    <div class="clearfix full-wrap">
+        <div class="clearfix full-header">
+                <block name="main-nav">
+                    <nav class="navbar navbar-default main-nav" role="navigation">
+                         <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-main">
+                                    <span class="sr-only">切换导航</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="img-responsive pull-left" style="margin-top:10px;" href="{:C('HOME_PAGE')}">
+                                    <img alt="PloverUAV" src="__HOME_IMG__/index/logo_Snapseed.jpg">
+                                </a>
+                            </div>
+                             <div class="collapse navbar-collapse navbar-collapse-main">
+                                 <ul class="nav navbar-nav navbar-right">
+                                     <li><a href="{:C('HOME_PAGE')}">首页</a></li>
+                                     <li><a href="index.php?s=/cms/cate/1.html">关于我们</a></li>
+                                     <li><a href="index.php?s=/cms/index/lists/cid/4.html">新闻动态</a></li>
+                                     <li><a href="index.php?s=/cms/index/lists/cid/5.html">精彩视频</a></li>
+                                     <li><a href="index.php?s=/cms/index/lists/cid/6.html">图片墙</a></li>
+                                     <li><a href="index.php?s=/cms/cate/2.html">联系我们</a></li>
+                                     <li class="dropdown">
+                                         <a href="{$vo.href}" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                             LANGUAGE <span class="caret"></span>
+                                         </a>
+                                         <ul class="dropdown-menu">
+                                             <li><a href="{$Think.config.HOME_PAGE}">简体中文</a></li>
+                                             <li><a href="{$Think.config.HOME_PAGE}">ENGLISH</a></li>
+                                             <li><a href="{$Think.config.HOME_PAGE}">한국어</a></li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+                             </div>
+                        </div>
+                        </nav>
+                    </block>
             </div>
+        </div>
 
-            <div class="clearfix full-container">
+     <div class="clearfix full-container">
                 <block name="jumbotron">
                 </block>
                 <div id="main" class="main">
                     <block name="main">这里是内容</block>
                 </div>
             </div>
-
 
 
         <block name="picture_viewer">
@@ -118,7 +140,7 @@
                 </block>
             </div>
         </div>
-    </block>
+</block>
 
     <div class="clearfix hook hook-page-footer">
         {:hook('PageFooter')} <!-- 文档末尾钩子 -->
