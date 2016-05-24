@@ -35,17 +35,18 @@
                 <block name="main-nav">
                     <nav class="navbar navbar-default main-nav" role="navigation">
                          <div class="container">
-                            <div class="navbar-header">
+                            <div class="navbar-header inline">
+                                <a class="img-top pull-left" href="{:C('HOME_PAGE')}">
+                                    <img alt="PloverUAV" class="img-responsive" src="__HOME_IMG__/index/logo_Snapseed.jpg">
+                                </a>
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-main">
                                     <span class="sr-only">切换导航</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="img-responsive pull-left" style="margin-top:10px;" href="{:C('HOME_PAGE')}">
-                                    <img alt="PloverUAV" src="__HOME_IMG__/index/logo_Snapseed.jpg">
-                                </a>
                             </div>
+
                              <div class="collapse navbar-collapse navbar-collapse-main">
                                  <ul class="nav navbar-nav navbar-right">
                                      <li><a href="{:C('HOME_PAGE')}">首页</a></li>
@@ -148,7 +149,7 @@
 
     <div class="clearfix full-script">
         <div class="container-fluid">
-            <include file="$_user_login_modal" /> <!-- 登录弹窗 -->
+            <include file="$_user_login_modal"/> <!-- 登录弹窗 -->
             <input type="hidden" id="corethink_home_img" value="__HOME_IMG__">
             <script type="text/javascript" src="__CUI__/js/cui.min.js"></script>
             <script type="text/javascript" src="__HOME_JS__/home.js"></script>
