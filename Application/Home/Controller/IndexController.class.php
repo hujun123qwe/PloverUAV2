@@ -30,4 +30,20 @@ class IndexController extends HomeController {
         $this->display();
     }
 
+    /*
+     * 申请无人机植保服务表单后台响应
+     * 2016-07-08 09:21
+     * /index.php?s=/cms/cate/9.html
+    */
+    public function reserve(){
+        if(IS_POST){
+
+        }else{
+            $this->display();
+        }
+    }
+
+    public function protocol(){
+        $this->display();
+    }
 }
