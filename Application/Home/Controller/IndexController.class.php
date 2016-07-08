@@ -8,6 +8,8 @@
 // +----------------------------------------------------------------------
 namespace Home\Controller;
 use Think\Controller;
+use User\Model\ReserveModel;
+
 /**
  * 前台默认控制器
  * @author jry <598821125@qq.com>
@@ -37,7 +39,20 @@ class IndexController extends HomeController {
     */
     public function reserve(){
         if(IS_POST){
+            echo "提交测试成功";
+            $reserve_info = array();
+            $reserve_info['_place'] = I('post._place');
+            $reserve_info['_type'] = I('post._type');
+            $reserve_info['_area'] = I('post._area');
+            $reserve_info['_time'] = I('post._time');
+            $reserve_info['_name'] = I('post._name');
+            $reserve_info['_phone'] = I('post._phone');
+            $reserve_info['_mark'] = I('post._mark');
 
+            $reserve_db = D('Reserve');
+            $reserve_db->insert($reserve_info);
+
+            var_dump($reserve_info);
         }else{
             $this->display();
         }
