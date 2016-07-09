@@ -198,7 +198,7 @@
         </div>
         <div class="sub_zone">
             <p><input type="checkbox" id="yd_xieyi" checked="checked" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="{:U('Home/Index/protocol')}">阅读并接受服务协议</a></p>
-            <button class="submit" id="dd" onclick="submit()" >提交预约信息</button>
+            <button class="submit" id="dd" onclick="return checkSubmit()" >提交预约信息</button>
         </div>
         <div class="footer">
             <a href="tel:05552827986" class="call"><img src="__HOME_IMG__/jifei/4-1.png"/>0555-2827986</a>
@@ -210,35 +210,39 @@
 </body>
 
 <script type="text/javascript">
-    $(function(){
-        //日期控件
-        var currYear = (new Date()).getFullYear();
-        var opt={};
-        opt.date = {preset : 'date'};
-        opt.datetime = {preset : 'datetime'};
-        opt.time = {preset : 'time'};
-        opt.default = {
-            theme: 'android-ics light', //皮肤样式
-            display: 'modal', //显示方式
-            mode: 'scroller', //日期选择模式
-            dateFormat: 'yyyy-mm-dd',
-            lang: 'zh',
-            showNow: true,
-            nowText: "今天",
-            startYear: currYear, //开始年份
-            endYear: currYear + 10 //结束年份
-        };
+//        $("#yd_xieyi").click(function(){
+//            if(this.checked){
+//                $("#yd_xieyi").attr("data-sel","1");
+//                $("#dd").css({"background":"#94c62c"}).removeAttr("disabled");
+//            }else{
+//                $("#yd_xieyi").attr("data-sel","0");
+//                $("#dd").css({"background":"#ddd"}).attr("disabled","disabled");
+//            }
+//        });
+//    });
+    function checkSubmit(){
+        var p1 = $("#yd_xieyi");
+        var p2 = $("#place");
+        var p3 = $("#proportion");
+        var p4 = $("#selDate");
+        var p5 = $("#callTel");
 
-        $("#selDate").mobiscroll($.extend(opt['date'], opt['default']));
-
-        $("#yd_xieyi").click(function(){
-            if(this.checked){
-                $("#yd_xieyi").attr("data-sel","1");
-                $("#dd").css({"background":"#94c62c"}).removeAttr("disabled");
-            }else{
-                $("#yd_xieyi").attr("data-sel","0");
-                $("#dd").css({"background":"#ddd"}).attr("disabled","disabled");
-            }
-        });
-    });
+        if(p2.val() == ""){
+            alert("请输入服务区域。");
+            return false;
+        }else if(p3.val() == ""){
+            alert("请输入作物面积。");
+            return false;
+        }else if(p4.val() == ""){
+            alert("请输入作业时间");
+            return false;
+        }else if(p5.val() == ""){
+            alert("请输入联系人电话");
+            return false;
+        }else if(!p1.is(':checked')){
+            alert("请同意预约协议");
+            return false;
+        }
+        return true;
+    }
 </script>

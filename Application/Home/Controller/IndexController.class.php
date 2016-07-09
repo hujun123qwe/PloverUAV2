@@ -39,7 +39,6 @@ class IndexController extends HomeController {
     */
     public function reserve(){
         if(IS_POST){
-            echo "提交测试成功";
             $reserve_info = array();
             $reserve_info['_place'] = I('post._place');
             $reserve_info['_type'] = I('post._type');
@@ -48,11 +47,18 @@ class IndexController extends HomeController {
             $reserve_info['_name'] = I('post._name');
             $reserve_info['_phone'] = I('post._phone');
             $reserve_info['_mark'] = I('post._mark');
+            $reserve_info['is_pay'] = 0;
+            $reserve_info['add_time'] = time();
 
             $reserve_db = D('Reserve');
-            $reserve_db->insert($reserve_info);
+            if($reserve_db->insert($reserve_info)){
+                $this->display('reserve_success');
+            }else{
+                echo "预约失败，请重新预约";
+                $this->display();
+            }
+//          var_dump($reserve_info);
 
-            var_dump($reserve_info);
         }else{
             $this->display();
         }
