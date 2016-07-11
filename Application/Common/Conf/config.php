@@ -33,6 +33,7 @@ $_config = array(
     // URL模式
     'URL_MODEL' => '3',
 
+
     // 全局过滤配置
     'DEFAULT_FILTER' => '', //TP默认为htmlspecialchars
 
@@ -44,6 +45,7 @@ $_config = array(
     'URL_ROUTER_ON'          => true, // 是否开启URL路由
     'URL_ROUTE_RULES'        => array(
         'admin' =>  'Admin/Index/Index',
+        'reserve' => 'Home/Index/reserve',
     ), // 默认路由规则 针对模块
     'URL_MAP_RULES'          => array(), // URL映射定义规则
 
