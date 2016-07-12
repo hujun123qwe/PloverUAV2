@@ -64,6 +64,15 @@ class IndexController extends HomeController {
         }
     }
 
+    public function data(){
+        $reserve_db = D('Reserve');
+        $data = $reserve_db->getItemInfo();
+        if($data){
+            $this->assign('reserve_data',$data);
+        }
+        $this->display();
+    }
+
     public function protocol(){
         $this->display();
     }

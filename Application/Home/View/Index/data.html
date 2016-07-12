@@ -1,0 +1,16 @@
+<!DocType html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>预约申请信息</h1>
+    <br>
+    <hr>
+    <br>
+    <volist name="reserve_data" id="data">
+        <br>{$data._place} {$data._type} {$data._area} {$data._time} {$data._name} {$data._phone} {$data._payment} {$data.is_pay} {$data._mark} {$data.add_time}
+    </volist>
+
+</body>
+</html>

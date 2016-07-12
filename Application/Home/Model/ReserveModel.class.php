@@ -24,7 +24,7 @@ class ReserveModel extends Model{
     }
 
     public function getItemInfo(){
-        return $this->select()->where(1);
+        return $this->select();
     }
 
 }
