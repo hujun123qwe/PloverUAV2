@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="{:C('WEB_SITE_TITLE')}">
     <meta name="format-detection" content="telephone=no,email=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equivvv="X-UA-Compatible" content="IE=Edge">
     <link rel="shortcut icon" type="image/x-icon" href="__ROOT__/favicon.ico">
     <link rel="apple-touch-icon" type="image/x-icon" href="__ROOT__/logo.png">
 
@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="__HOME_CSS__/jifei/mobiscroll.css">
     <link rel="stylesheet" type="text/css" href="__HOME_CSS__/jifei/mobiscroll_date.css">
     <link rel="stylesheet" type="text/css" href="__HOME_CSS__/jifei/normalize3.0.2.min.css">
-
+    <script type="text/javascript" src="__HOME_JS__/jifei/jquery-2.1.1.js"></script>
     <!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -118,8 +118,48 @@
             <div class="fw_zone zone_box">
                 <div class="fl yy_left"><img class="img-2 img-2-2" src="__HOME_IMG__/jifei/2-2.png"><p class="yy_name">服务区域：</p></div>
                 <div class="fl yy_right">
-                    <p>请填写详细的区域</p>
-                    <input type="text" id="place" name="_place" style="background:#ddedbc;text-align: center" placeholder="省，市，县" maxlength="15" value="">
+                    <p>上下滑动选取作业区域</p>
+                    <ul>
+                        <li class="fl yy_li">
+                            <select id="area2" onchange="changeArea()" class="" name="province">
+                                <option value="安徽省" selected="selected">安徽省</option>
+                                <option value="江苏省">江苏省</option>
+                                <option value="浙江省">浙江省</option>
+                            </select>
+                        </li>
+                        <li class="fl yy_li">
+                            <select id="area3" onchange="changeMuni()" class="" name="city">
+                                <option value="马鞍山" selected="selected">马鞍山</option>
+                                <option value="芜湖市">芜湖市</option>
+                                <option value="宣城市">宣城市</option>
+                                <option value="池州市">池州市</option>
+                                <option value="铜陵市">铜陵市</option>
+                                <option value="合肥市">合肥市</option>
+                                <option value="黄山市">黄山市</option>
+                                <option value="滁州市">滁州市</option>
+                                <option value="安庆市">安庆市</option>
+                                <option value="六安市">六安市</option>
+                                <option value="淮南市">淮南市</option>
+                                <option value="蚌埠市">蚌埠市</option>
+                                <option value="阜阳市">阜阳市</option>
+                                <option value="宿州市">宿州市</option>
+                                <option value="亳州市">亳州市</option>
+                                <option value="淮北市">淮北市</option>
+                            </select>
+                        </li>
+                        <li class="fl yy_li">
+                            <select id="area4" class="" name="county">
+                                <option value="花山区">花山区</option>
+                                <option value="雨山区">雨山区</option>
+                                <option value="博望区">博望区</option>
+                                <option value="当涂">当涂</option>
+                                <option value="含山">含山</option>
+                                <option value="和县">和县</option>
+                            </select>
+                        </li>
+                        <li class="clear"></li>
+                    </ul>
+
                 </div>
                 <div class="clear"></div>
             </div>
@@ -129,7 +169,13 @@
                     <p>上下滑动选取服务作物</p>
                     <ul>
                         <li class="fl yy_li">
-                            <select id="crops" name="_type" onchange="changeArea()"><option value="00">水稻</option><option value="01">小麦</option><option value="02">棉花</option><option value="03">玉米</option><option value="04">油葵</option><option value="05">其他</option></select>
+                            <select id="crops" name="_type" onchange="changeArea()"><option value="00">水稻</option>
+                                <option value="01">小麦</option>
+                                <option value="02">棉花</option>
+                                <option value="03">玉米</option>
+                                <option value="04">油葵</option>
+                                <option value="05">其他</option>
+                            </select>
                         </li>
                         <li class="clear"></li>
                     </ul>
@@ -140,21 +186,23 @@
                 <div class="fl yy_left"><img class="img-2 img-2-4" src="__HOME_IMG__/jifei/2-4.png"><p class="yy_name">作物面积：</p></div>
                 <div class="fl yy_right">
                     <p>填写作业区域面积</p>
-                    <p>单次作业100亩起，且单块地20亩起</p>
                     <input type="text" id="proportion" name="_area" placeholder="单位:亩" maxlength="15" value="">
                 </div>
                 <div class="clear"></div>
             </div>
+
             <div class="zwmj_zone zone_box">
-                <div class="fl yy_left"><img class="img-2 img-2-5" src="__HOME_IMG__/jifei/2-5.png"><p class="yy_name">作业时间：</p></div>
+                <div class="fl yy_left"><img class="img-2 img-2-5" src="__HOME_IMG__/jifei/2-5.png"/><p class="yy_name">作业时间：</p></div>
                 <div class="fl yy_right">
-                    <p>请请填写作业时间</p>
+                    <span class="slidDown"></span>
+                    <p>请提前一周预约作业</p>
                     <ul>
-                        <li class="yy_li"><input id="selDate" name="_time" type="text" placeholder="如2016-7-8"></li>
+                        <li class="yy_li"><input id="selDate" type="text" name="_time" placeholder="请选择作业时间"/></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
             </div>
+
             <div class="lxr_zone zone_box">
                 <div class="fl yy_left"><img class="img-2 img-2-6" src="__HOME_IMG__/jifei/2-6.png"><p class="yy_name">联系人：</p></div>
                 <div class="fl yy_right">
@@ -208,24 +256,17 @@
 </div>
 
 </body>
-
+<script type="text/javascript" src="__HOME_JS__/jifei/mobiscroll_date.js" charset="gb2312"></script>
+<script type="text/javascript" src="__HOME_JS__/jifei//mobiscroll.js"></script>
+<script type="text/javascript" src="__HOME_JS__/jifei//index.js?vvv=1.1"></script>
 <script type="text/javascript">
-//        $("#yd_xieyi").click(function(){
-//            if(this.checked){
-//                $("#yd_xieyi").attr("data-sel","1");
-//                $("#dd").css({"background":"#94c62c"}).removeAttr("disabled");
-//            }else{
-//                $("#yd_xieyi").attr("data-sel","0");
-//                $("#dd").css({"background":"#ddd"}).attr("disabled","disabled");
-//            }
-//        });
-//    });
     function checkSubmit(){
         var p1 = $("#yd_xieyi");
         var p2 = $("#place");
         var p3 = $("#proportion");
         var p4 = $("#selDate");
         var p5 = $("#callTel");
+        var patternPH = /^1[3|5|8][0-9]\d{4,8}$/;
 
         if(p2.val() == ""){
             alert("请输入服务区域。");
@@ -237,7 +278,13 @@
             alert("请输入作业时间");
             return false;
         }else if(p5.val() == ""){
-            alert("请输入联系人电话");
+            alert("请输入手机号");
+            return false;
+        }else if(p5.trim().length !=11) {
+            alert("请输入正确的11位手机号");
+            return false;
+        }else if(!patternPH.test(p5)){
+            alert("手机号只能为纯数字");
             return false;
         }else if(!p1.is(':checked')){
             alert("请同意预约协议");
@@ -245,4 +292,107 @@
         }
         return true;
     }
+
+    $(function(){
+        //日期控件
+        var currYear = (new Date()).getFullYear();
+        var opt={};
+        opt.date = {preset : 'date'};
+        opt.datetime = {preset : 'datetime'};
+        opt.time = {preset : 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            lang: 'zh',
+            showNow: true,
+            nowText: "今天",
+            startYear: currYear, //开始年份
+            endYear: currYear + 10 //结束年份
+        };
+
+        $("#selDate").mobiscroll($.extend(opt['date'], opt['default']));
+
+        $("#yd_xieyi").click(function(){
+            if(this.checked){
+                $("#yd_xieyi").attr("data-sel","1");
+                $("#dd").css({"background":"#94c62c"}).removeAttr("disabled");
+            }else{
+                $("#yd_xieyi").attr("data-sel","0");
+                $("#dd").css({"background":"#ddd"}).attr("disabled","disabled");
+            }
+        });
+    });
+
+    //市区方法
+    function changeArea(){
+        var vArea2=document.getElementById("area2").value;
+        var array_flag;
+        if(vArea2 == "安徽省"){
+            array_flag = 0;
+        }else if(vArea2 == "江苏省"){
+            array_flag = 1;
+        }else{
+            array_flag = 2;
+        }
+        $("#area3").empty();
+        $("#area4").empty();
+        var are3 = [["马鞍山","芜湖市","宣城市","池州市","铜陵市","合肥市","黄山市","滁州市","安庆市","六安市","淮南市","蚌埠市","阜阳市","宿州市","亳州市","淮北市"],["南京市"],["湖州市"]];
+        for(var iArea in are3[array_flag]){
+            $("#area3").append("<option value =" + are3[array_flag][iArea] + ">" + are3[array_flag][iArea] + "</option>");
+        }
+        changeMuni();
+    }
+    //县区方法
+    function changeMuni() {
+        var vvv = document.getElementById("area3").value;
+        var flag = 0;
+        if(vvv=="马鞍山"){
+            flag=0;
+        }else if(vvv=="芜湖市"){
+            flag=1;
+        }else if(vvv=="宣城市"){
+            flag=2;
+        }else if(vvv=="池州市"){
+            flag=3;
+        }else if(vvv=="铜陵市"){
+            flag=4;
+        }else if(vvv=="合肥市"){
+            flag=5;
+        }else if(vvv=="黄山市"){
+            flag=6;
+        }else if(vvv=="滁州市"){
+            flag=7;
+        }else if(vvv=="安庆市"){
+            flag=8;
+        }else if(vvv=="六安市"){
+            flag=9;
+        }else if(vvv=="淮南市"){
+            flag=10;
+        }else if(vvv=="蚌埠市"){
+            flag=11;
+        }else if(vvv=="阜阳市"){
+            flag=12;
+        }
+        else if(vvv=="宿州市"){
+            flag=13;
+        }
+        else if(vvv=="亳州市"){
+            flag=14;
+        }else if(vvv=="淮北市"){
+            flag=15;
+        }else if(vvv=="南京市"){
+            flag=16;
+        }else if(vvv=="湖州市"){
+            flag = 17;
+        }
+        $("#area4").empty();
+
+        var are4 = [["花山区","博望区","当涂县","含山县","和县","雨山区"],["镜湖区","弋江区","鸠江区","三山区","芜湖县","繁昌县","南陵县","无为县"],["宣州区","郎溪县","广德县","泾县","绩溪县","旌德县","宁国市"],["贵池区","东至县","石台县","青阳县"],["铜官区","义安区","郊区","枞阳县"],["瑶海区","庐阳区","蜀山区","包河区","长丰县","肥东县","肥西县","庐江县","巢湖市"],["屯溪区","黄山区","徽州区","歙县","休宁县","祁门县","黟县"],["南谯区","琅琊区","全椒县","来安县","定远县","凤阳县","天长市","明光市"],["迎江区","宜秀区","大观区","怀宁县","潜山县","太湖县","宿松县","望江县","岳西县","桐城市"],["金安区","裕安区","叶集区","霍山县","金寨县","舒城县","霍邱县"],["田家庵","潘集区","谢家集","八公山","大通区","寿县","凤台县"],["蚌山区","禹会区","淮上区","龙子湖区","怀远县","固镇县","五河县"],["颍州区","颍泉区","颍东区","阜南县","临泉县","太和县","颍上县","界首市"],["埇桥区","萧县","砀山县","灵璧县","泗县"],["谯城区","蒙城县","涡阳县","利辛县"],["相山区","杜集区","烈山区","濉溪县"],["玄武区","秦淮区","鼓楼区","建邺区","雨花台区","浦口区","六合区","栖霞区","江宁区","溧水区","高淳区"],["吴兴区","南浔区","德清县","长兴县","安吉县"]];
+        for ( var some in are4[flag]) {
+            $("#area4").append("<option value =" + are4[flag][some] + ">" + are4[flag][some] + "</option>");
+        }
+    }
+
 </script>

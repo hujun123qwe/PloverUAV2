@@ -36,12 +36,28 @@ class IndexController extends HomeController {
      * 申请无人机植保服务表单后台响应
      * 2016-07-08 09:21
      * /index.php?s=/cms/cate/9.html
+     * /home/index/reserve
     */
     public function reserve(){
         if(IS_POST){
             $reserve_info = array();
-            $reserve_info['_place'] = I('post._place');
+            $province = I('post.province');
+            $city = I('post.city');
+            $county = I('post.county');
+            $reserve_info['_place'] = $province.$city.$county;
+
             $reserve_info['_type'] = I('post._type');
+            if($reserve_info['_type'] == '00'){
+                $reserve_info['_type'] = "水稻";
+            }else if($reserve_info['_type'] == '01'){
+                $reserve_info['_type'] = "小麦";
+            }else if($reserve_info['_type'] == '02'){
+                $reserve_info['_type'] = "棉花";
+            }else if($reserve_info['_type'] == '03'){
+                $reserve_info['_type'] = "玉米";
+            }else{
+                $reserve_info['_type'] = "其他";
+            }
             $reserve_info['_area'] = I('post._area');
             $reserve_info['_time'] = I('post._time');
             $reserve_info['_name'] = I('post._name');
@@ -60,10 +76,14 @@ class IndexController extends HomeController {
 //          var_dump($reserve_info);
 
         }else{
+
             $this->display();
         }
     }
 
+    /*
+     * /home/index/data
+     */
     public function data(){
         $reserve_db = D('Reserve');
         $data = $reserve_db->getItemInfo();

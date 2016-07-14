@@ -8,8 +8,9 @@
     <br>
     <hr>
     <br>
+    <h5>地点：作物类型：作业面积：作业时间：联系人姓名：联系人手机号：支付定金：是否支付：留言：添加时间</h5>
     <volist name="reserve_data" id="data">
-        <br>{$data._place} {$data._type} {$data._area} {$data._time} {$data._name} {$data._phone} {$data._payment} {$data.is_pay} {$data._mark} {$data.add_time}
+        <br>{$data._place} {$data._type} {$data._area} {$data._time} {$data._name} {$data._phone} {$data._payment} {$data.is_pay} {$data._mark} {$data.add_time|date="Y年m月d日H点",###}
     </volist>
 
 </body>
