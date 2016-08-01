@@ -1,56 +1,69 @@
 <!DocType html>
-<html>
+<html lang="zh">
 <head>
     <meta title="安徽啄木鸟无人机科技有限公司植保预约服务统计">
-    <meta lang="zh-cn">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="author" content="{:C('WEB_SITE_TITLE')}">
+    <meta name="keywords" content="{$meta_keywords}">
+    <meta name="description" content="{$meta_description}">
+    <meta name="generator" content="CoreThink">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="{:C('WEB_SITE_TITLE')}">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" type="image/x-icon" href="__ROOT__/favicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" href="__ROOT__/logo.png">
 
-    <link rel="stylesheet" href="__HOME_CSS__/github/frameworks.css" type="text/css"/>
-    <link rel="stylesheet" href="__HOME_CSS__/github/github.css" type="text/css"/>
-    <link rel="stylesheet" href="__HOME_CSS__/github/site.css" type="text/css"/>
-
+    <link rel="stylesheet" type="text/css" href="__CUI__/css/cui.min.css">
 </head>
 <body>
-    <h1>预约申请信息</h1>
     <br>
+    <h1 style="text-align: center">安徽啄木鸟无人机科技有限公司植保预约服务申请信息统计</h1>
     <hr>
     <br>
-    <table class="table table-bordered table-striped table-hover" style="width: 92%">
+    <div class="table-response">
+        <table class="table table-bordered table-striped table-hover" style="width: 92%; margin:0 auto;">
         <thead>
             <tr>
-                <th>编号</th>
-                <th>地点</th>
-                <th>作物类型</th>
-                <th>作业面积</th>
-                <th>作业时间</th>
-                <th>联系人姓名</th>
-                <th>联系人手机号</th>
-                <th>支付定金</th>
-                <th>是否支付</th>
-                <th>留言</th>
-                <th>添加时间</th>
-                <th>操作</th>
+                <th style="text-align: center">编号</th>
+                <th style="text-align: center">地点</th>
+                <th style="text-align: center">作物类型</th>
+                <th style="text-align: center">作业面积</th>
+                <th style="text-align: center">作业时间</th>
+                <th style="text-align: center">联系人姓名</th>
+                <th style="text-align: center">联系人手机号</th>
+                <th style="text-align: center">支付定金</th>
+                <th style="text-align: center">是否支付</th>
+                <th style="text-align: center">留言</th>
+                <th style="text-align: center">添加时间</th>
+                <th style="text-align: center">操作</th>
             </tr>
         </thead>
         <tbody>
         <volist name="reserve_data" id="data" key="k">
             <tr class="js-navigation-item">
-                <td class="content"><span class="css-truncate css-truncate-target">{$k}</span></td>
-                <td class="content"><span class="css-truncate css-truncate-target">{$data._place}</span></td>
-                <td class="content"><span class="css-truncate css-truncate-target">{$data._type} </span></td>
-                <td class="content"><span class="css-truncate css-truncate-target">{$data._area} </span></td>
-                <td class="content"><span class="css-truncate css-truncate-target">{$data._time}</span></td>
-                <td class="content"><span class="css-truncate css-truncate-target"> {$data._name}</span></td>
-                <td class="content"><span class="css-truncate css-truncate-target"> {$data._phone}</span></td>
-                <td class="content"><span class="css-truncate css-truncate-target"> {$data._payment}</span></td>
-                <td class="content"><span class="css-truncate css-truncate-target">  {$data.is_pay} </span></td>
-                <td class="content"><span class="css-truncate css-truncate-target">  {$data._mark}</span></td>
-                <td class="content"><span class="css-truncate css-truncate-target">  {$data.add_time|date="Y年m月d日H点",###}</span></td>
+                <td style="text-align: center">{$k}</td>
+                <td style="text-align: center">{$data._place}</td>
+                <td style="text-align: center">{$data._type}</td>
+                <td style="text-align: center">{$data._area} 亩</td>
+                <td style="text-align: center">{$data._time}</td>
+                <td style="text-align: center">{$data._name}</td>
+                <td style="text-align: center">{$data._phone}</td>
+                <td style="text-align: center">￥ {$data._payment}</td>
+                <td style="text-align: center">
+                    <if condition="$data.is_pay eq 0">否
+                        <else /> 是
+                    </if>
+                </td>
+                <td style="text-align: center">{$data._mark}</td>
+                <td style="text-align: center">{$data.add_time|date="Y年m月d日H点",###}</td>
                 <td><a>编辑</a>&nbsp;<a>删除</a>
             </tr>
         </volist>
         </tbody>
     </table>
-
+    </div>
 </body>
 </html>
