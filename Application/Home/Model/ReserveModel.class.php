@@ -9,12 +9,17 @@
 namespace Home\Model;
 use Think\Model;
 /**
- * 用户字段模型
- * 该类参考了OneThink的部分实现
- * @author huajie <banhuajie@163.com>
+ * 预约统计信息模型
+ * @author 胡军 <hujun123qwe@163.com>
  */
 class ReserveModel extends Model{
-    
+
+    /*
+     * 预约信息插入数据库方法
+     * 参数: $item
+     *       得到预约信息
+     * 使用模型的add方法
+     */
     public function insert($item){
         if(empty($item)){
             return 0;
@@ -23,6 +28,10 @@ class ReserveModel extends Model{
         }
     }
 
+    /*
+     * 预约信息全选择方法
+     * 返回：得到的信息（二维数组）
+     */
     public function getItemInfo(){
         return $this->select();
     }

@@ -35,18 +35,16 @@ class IndexController extends HomeController {
     /*
      * 申请无人机植保服务表单后台响应
      * 2016-07-08 09:21
-     * /index.php?s=/cms/cate/9.html
      * /home/index/reserve
     */
     public function reserve(){
-        if(IS_POST){
-            $reserve_info = array();
-            $province = I('post.province');
-            $city = I('post.city');
-            $county = I('post.county');
-            $reserve_info['_place'] = $province.$city.$county;
-
-            $reserve_info['_type'] = I('post._type');
+        if(IS_POST){            //是否通过POST方式提交
+            $reserve_info = array();            //定义一个数组用于存储预约信息
+            $province = I('post.province');     //省份
+            $city = I('post.city');              //城市
+            $county = I('post.county');           //区/县
+            $reserve_info['_place'] = $province.$city.$county;      //将地址合并存储
+            $reserve_info['_type'] = I('post._type');       //农作物种类
             if($reserve_info['_type'] == '00'){
                 $reserve_info['_type'] = "水稻";
             }else if($reserve_info['_type'] == '01'){
@@ -58,39 +56,38 @@ class IndexController extends HomeController {
             }else{
                 $reserve_info['_type'] = "其他";
             }
-            $reserve_info['_area'] = I('post._area');
-            $reserve_info['_time'] = I('post._time');
-            $reserve_info['_name'] = I('post._name');
-            $reserve_info['_phone'] = I('post._phone');
-            $reserve_info['_mark'] = I('post._mark');
-            $reserve_info['is_pay'] = 0;
-            $reserve_info['add_time'] = time();
+            $reserve_info['_area'] = I('post._area');       //作业面积
+            $reserve_info['_time'] = I('post._time');       //作业时间
+            $reserve_info['_name'] = I('post._name');       //联系人姓名
+            $reserve_info['_phone'] = I('post._phone');     //联系人手机号
+            $reserve_info['_mark'] = I('post._mark');        //押金
+            $reserve_info['is_pay'] = 0;                     //是否支付押金
+            $reserve_info['add_time'] = time();             //添加时间
 
-            $reserve_db = D('Reserve');
-            if($reserve_db->insert($reserve_info)){
-                $this->display('reserve_success');
+            $reserve_db = D('Reserve');                     //调用数据库Reserve类
+            if($reserve_db->insert($reserve_info)){         //方法insert插入一条信息到数据库Reserve，如果成功返回true
+                $this->display('reserve_success');          //成功，显示成功页面
             }else{
-                echo "预约失败，请重新预约";
+                echo "预约失败，请重新预约";                  //失败，显示失败页面
                 $this->display();
             }
-//          var_dump($reserve_info);
-
         }else{
-
-            $this->display();
+            $this->display();                           //不是POST提交方式，则显示预约界面
         }
     }
 
     /*
+     * 后台预约信息统计
+     * 2016-07-08 18:02
      * /home/index/data
-     */
+    */
     public function data(){
-        $reserve_db = D('Reserve');
-        $data = $reserve_db->getItemInfo();
+        $reserve_db = D('Reserve');         //实例化Reserve数据库对象
+        $data = $reserve_db->getItemInfo();     //调用getItemInfo()方法，得到信息赋值给data变量
         if($data){
-            $this->assign('reserve_data',$data);
+            $this->assign('reserve_data',$data);    //使用assign方法实现data在html页面显示
         }
-        $this->display();
+        $this->display();           //显示后台预约信息统计界面
     }
 
     public function protocol(){
